@@ -1,0 +1,27 @@
+unit GeraBoleto.Banco;
+
+interface
+
+type
+  TBanco = class
+  private
+    FNumero: string;
+    FDigitoNumero: string;
+    FNome: string;
+    procedure SetNumero(const Value: string);
+  public
+    property Numero: string read FNumero write SetNumero;
+    property DigitoNumero: string read FDigitoNumero write FDigitoNumero;
+    property Nome: string read FNome write FNome;
+  end;
+
+implementation
+
+{ TBanco }
+
+procedure TBanco.SetNumero(const Value: string);
+begin
+  FNumero := Trim(Value);
+end;
+
+end.

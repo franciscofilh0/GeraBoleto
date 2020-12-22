@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2020/12/21 22:58:46.827,=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\Unit1.pas</Transaction>
+    <Transaction>2020/12/21 22:59:03.067,D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Conta.pas=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\Unit1.pas</Transaction>
+    <Transaction>2020/12/21 23:03:30.704,D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Conta.pas=</Transaction>
+    <Transaction>2020/12/21 23:05:40.956,=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\Unit1.pas</Transaction>
+    <Transaction>2020/12/21 23:05:55.952,D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Pessoa.pas=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\Unit1.pas</Transaction>
+    <Transaction>2020/12/21 23:14:08.583,=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Pessoa.pas</Transaction>
+    <Transaction>2020/12/21 23:14:33.752,=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco.pas</Transaction>
+    <Transaction>2020/12/21 23:14:33.778,=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Conta.pas</Transaction>
+    <Transaction>2020/12/21 23:15:17.748,=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\Unit1.pas</Transaction>
+    <Transaction>2020/12/21 23:15:39.011,D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Titulo.pas=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\Unit1.pas</Transaction>
+    <Transaction>2020/12/21 23:20:01.346,=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\Unit1.pas</Transaction>
+    <Transaction>2020/12/21 23:20:21.010,D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Boleto.pas=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\Unit1.pas</Transaction>
+    <Transaction>2020/12/21 23:46:17.669,=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestGeraBoleto.pas</Transaction>
+    <Transaction>2020/12/21 23:48:39.186,=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestBanco.pas</Transaction>
+    <Transaction>2020/12/22 00:09:09.906,=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\Unit1.pas</Transaction>
+    <Transaction>2020/12/22 00:09:29.297,D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Funcoes.pas=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
