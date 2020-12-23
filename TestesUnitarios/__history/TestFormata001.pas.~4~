@@ -1,0 +1,37 @@
+unit TestFormata001;
+
+interface
+
+uses
+  TestFrameWork, GeraBoleto.Boleto;
+
+type
+
+  TestTFormata001 = class(TTestCase)
+  strict private
+    FBoleto: IBoleto;
+  public
+    procedure SetUp; override;
+    procedure TearDown; override;
+  published
+
+  end;
+
+
+implementation
+
+{ TestTFormata001 }
+
+procedure TestTFormata001.SetUp;
+begin
+  inherited;
+  FBoleto := TBoleto.Create();
+end;
+
+procedure TestTFormata001.TearDown;
+begin
+  inherited;
+  FBoleto.Free();
+end;
+
+end.

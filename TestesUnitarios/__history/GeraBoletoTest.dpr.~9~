@@ -15,7 +15,14 @@ program GeraBoletoTest;
 {$ENDIF}
 
 uses
-  DUnitTestRunner;
+  DUnitTestRunner,
+  GeraBoleto.Pessoa in '..\Source\GeraBoleto.Pessoa.pas',
+  GeraBoleto.Banco in '..\Source\GeraBoleto.Banco.pas',
+  GeraBoleto.Conta in '..\Source\GeraBoleto.Conta.pas',
+  GeraBoleto.Titulo in '..\Source\GeraBoleto.Titulo.pas',
+  GeraBoleto.Boleto in '..\Source\GeraBoleto.Boleto.pas',
+  TestBanco in 'TestBanco.pas',
+  GeraBoleto.Funcoes in '..\Source\GeraBoleto.Funcoes.pas';
 
 {$R *.RES}
 

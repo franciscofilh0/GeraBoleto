@@ -1,0 +1,31 @@
+unit GeraBoleto.Factories;
+
+interface
+
+uses
+  GeraBoleto.Banco001,
+  GeraBoleto.Base,
+  GeraBoleto.Boleto;
+
+type
+  TFactoryBoleto = class
+  public
+    class function GetFormatter(ABoleto: IBoleto): IFormatacao;
+  end;
+
+implementation
+
+uses
+  SysUtils,
+  GeraBoleto.Banco001;
+
+{ TFactoryBoleto }
+
+class function TFactoryBoleto.GetFormatter(ABoleto: IBoleto): IFormatacao;
+begin
+  case ABoleto.GetConta.Banco.Numero.ToInteger() of
+    1: Result := TFormata001.Create(ABoleto);
+  end;
+end;
+
+end.

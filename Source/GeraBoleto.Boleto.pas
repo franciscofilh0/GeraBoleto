@@ -43,6 +43,9 @@ type
 
 implementation
 
+uses
+  GeraBoleto.Base;
+
 { TBoleto }
 
 constructor TBoleto.Create;
@@ -65,7 +68,12 @@ end;
 
 procedure TBoleto.Gerar;
 begin
-
+  TGeraBoletoBuilder.Create(Self).FormataCampos()
+                                 .ValidaDados()
+                                 .FormataCampoLivre()
+                                 .FormataCodigoBarras()
+                                 .FormataLindaDigitavel()
+                                 .Criar();
 end;
 
 function TBoleto.GetBeneficiario: TPessoa;

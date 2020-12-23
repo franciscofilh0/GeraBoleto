@@ -15,6 +15,8 @@ type
     FConta: string;
     FDigitoConta: string;
     FCarteira: string;
+    FConvenio: string;
+    FSeqNossoNumero: Integer;
   public
     constructor Create;
     destructor Destroy; override;
@@ -25,6 +27,8 @@ type
     property Conta: string read FConta write FConta;
     property DigitoConta: string read FDigitoConta write FDigitoConta;
     property Carteira: string read FCarteira write FCarteira;
+    property Convenio: string read FConvenio write FConvenio;
+    property SeqNossoNumero: Integer read FSeqNossoNumero write FSeqNossoNumero;
   end;
 
 implementation

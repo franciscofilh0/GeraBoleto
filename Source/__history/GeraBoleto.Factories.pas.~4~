@@ -1,0 +1,24 @@
+unit GeraBoleto.Factories;
+
+interface
+
+uses
+  GeraBoleto.Base,
+  GeraBoleto.Boleto;
+
+type
+  TFactoryBoleto = class
+  public
+    class function GetFormatter(ABoleto: IBoleto): IFormatacao;
+  end;
+
+implementation
+
+{ TFactoryBoleto }
+
+class function TFactoryBoleto.GetFormatter(ABoleto: IBoleto): IFormatacao;
+begin
+
+end;
+
+end.

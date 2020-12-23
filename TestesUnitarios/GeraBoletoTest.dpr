@@ -22,7 +22,11 @@ uses
   GeraBoleto.Titulo in '..\Source\GeraBoleto.Titulo.pas',
   GeraBoleto.Boleto in '..\Source\GeraBoleto.Boleto.pas',
   TestBanco in 'TestBanco.pas',
-  GeraBoleto.Funcoes in '..\Source\GeraBoleto.Funcoes.pas';
+  GeraBoleto.Funcoes in '..\Source\GeraBoleto.Funcoes.pas',
+  GeraBoleto.Base in '..\Source\GeraBoleto.Base.pas',
+  GeraBoleto.Banco001 in '..\Source\GeraBoleto.Banco001.pas',
+  GeraBoleto.Factories in '..\Source\GeraBoleto.Factories.pas',
+  TestFormata001 in 'TestFormata001.pas';
 
 {$R *.RES}
 

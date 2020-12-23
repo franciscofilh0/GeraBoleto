@@ -6,6 +6,8 @@ uses
   SysUtils, StrUtils;
 
   function IsNumber(Value: string): Boolean;
+  function LeftPad(Value: string; Length: Integer; Pad: Char='0'): string;
+  function RightPad(Value: string; Length: Integer; Pad: Char='0'): string;
 
 implementation
 
@@ -24,5 +26,16 @@ begin
     end;
   end;
 end;
+
+function LeftPad(Value: string; Length: Integer; Pad: Char='0'): string;
+begin
+  Result := RightStr(StringOfChar(Pad, Length) + Value, Length);
+end;
+
+function RightPad(Value: string; Length: Integer; Pad: Char='0'): string;
+begin
+  Result := RightStr(Value + StringOfChar(Pad, Length), Length);
+end;
+
 
 end.
