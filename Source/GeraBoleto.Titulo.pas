@@ -13,6 +13,7 @@ type
     FAceite: string;
     FDataProc: TDate;
     FNossoNumero: string;
+    FDigitoNossoNumero: string;
     FValor: Currency;
   public
     property Emissao: TDate read FEmissao write FEmissao;
@@ -23,6 +24,7 @@ type
     property Aceite: string read FAceite write FAceite;
     property DataProc: TDate read FDataProc write FDataProc;
     property NossoNumero: string read FNossoNumero write FNossoNumero;
+    property DigitoNossoNumero: string read FDigitoNossoNumero write FDigitoNossoNumero;
     property Valor: Currency read FValor write FValor;
   end;
 

@@ -1,0 +1,64 @@
+unit GeraBoleto.Funcoes;
+
+interface
+
+uses
+  SysUtils, StrUtils;
+
+  function IsNumber(Value: string): Boolean;
+  function LeftPad(Value: string; Length: Integer; Pad: Char='0'): string;
+  function RightPad(Value: string; Length: Integer; Pad: Char='0'): string;
+  function Modulo11(Valor: string; Base: Integer = 9): string;
+
+implementation
+
+function Modulo11(Valor: string; Base: Integer = 9): string;
+var
+  Soma: Integer;
+  Contador, Peso, Resto: Integer;
+begin
+  Soma := 0;
+  Peso := 2;
+
+  for Contador := Length(Valor) downto 1 do
+  begin
+    Soma := Soma + (StrToInt(Valor[Contador]) * Peso);
+
+    if Peso < Base then
+      Peso := Peso + 1
+    else
+      Peso := 2;
+  end;
+
+  Resto := Soma mod 11;
+  Result := IntToStr(11 - Resto);
+end;
+
+function IsNumber(Value: string): Boolean;
+var
+  i: Integer;
+begin
+  Result := True;
+
+  for i := 1 to Value.Length do
+  begin
+    if not (Value[i] in ['0'..'9']) then
+    begin
+      Result := False;
+      Break;
+    end;
+  end;
+end;
+
+function LeftPad(Value: string; Length: Integer; Pad: Char='0'): string;
+begin
+  Result := RightStr(StringOfChar(Pad, Length) + Value, Length);
+end;
+
+function RightPad(Value: string; Length: Integer; Pad: Char='0'): string;
+begin
+  Result := RightStr(Value + StringOfChar(Pad, Length), Length);
+end;
+
+
+end.

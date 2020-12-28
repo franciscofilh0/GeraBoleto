@@ -1,0 +1,41 @@
+unit TestGeraBoletoBuilder;
+
+interface
+
+uses
+  TestFramework, GeraBoleto.Boleto, SysUtils;
+
+type
+
+  TestTGeraBoletoBuilder = class(TTestCase)
+  strict private
+    FBoleto: IBoleto;
+  private
+    procedure SetDadosPadrao;
+  public
+    procedure SetUp; override;
+    procedure TearDown; override;
+  published
+  end;
+
+implementation
+
+{ TestTGeraBoletoBuilder }
+
+procedure TestTGeraBoletoBuilder.SetDadosPadrao;
+begin
+end;
+
+procedure TestTGeraBoletoBuilder.SetUp;
+begin
+  inherited;
+  FBoleto := TBoleto.Create();
+  SetDadosPadrao();
+end;
+
+procedure TestTGeraBoletoBuilder.TearDown;
+begin
+  inherited;
+end;
+
+end.

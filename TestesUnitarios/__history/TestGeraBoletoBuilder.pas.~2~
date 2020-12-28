@@ -1,0 +1,20 @@
+unit TestGeraBoletoBuilder;
+
+interface
+
+uses
+  TestFramework, GeraBoleto.Boleto, SysUtils;
+
+type
+
+  TestTGeraBoletoBuilder = class(TTestCase)
+  strict private
+    FBoleto: IBoleto;
+  private
+  public
+  published
+  end;
+
+implementation
+
+end.

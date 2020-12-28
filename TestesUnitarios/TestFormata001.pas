@@ -19,6 +19,9 @@ type
     procedure TestDigitoNumeroBancoInvalido;
     procedure TestFormatacaoDoNumeroDaAgencia;
     procedure TestFormatacaoNumeroConta;
+    procedure TestFormatacaoCampoLivreParaConvenio4e6;
+    procedure TestFormatacaoCampoLivreParaConvenio7;
+    procedure TestDigitoVerificadorNossoNumero;
   end;
 
 
@@ -76,6 +79,45 @@ begin
   FBoleto.Gerar();
   StopExpectingException('Nenhuma exceção gerada quando informado o dígito do número do banco inválido');
 end;
+
+procedure TestTFormata001.TestDigitoVerificadorNossoNumero;
+begin
+  FBoleto.GetConta().SeqNossoNumero := 123;
+  FBoleto.GetConta().Convenio := '123456';
+  FBoleto.Gerar();
+
+  CheckEquals('4', FBoleto.GetTitulo().DigitoNossoNumero, 'Dígito verificador nosso numero inválido!');
+end;
+
+procedure TestTFormata001.TestFormatacaoCampoLivreParaConvenio4e6;
+begin
+  FBoleto.GetConta.SeqNossoNumero := 123;
+  FBoleto.GetConta.Convenio := '1234';
+  FBoleto.GetConta.Agencia := '123';
+  FBoleto.GetConta.Conta := '1234';
+  FBoleto.GetConta.Carteira := '17';
+  FBoleto.Gerar();
+
+  CheckEquals('1234000012301230000123417', FBoleto.GetCampoLivre(), 'Formatação do campo livre inválida para convênio de 4 dígitos!');
+
+  FBoleto.GetConta.Convenio := '123456';
+  FBoleto.Gerar();
+
+  CheckEquals('1234560012301230000123417', FBoleto.GetCampoLivre(), 'Formatação do campo livre inválida para convênio de 6 dígitos!');
+end;
+
+procedure TestTFormata001.TestFormatacaoCampoLivreParaConvenio7;
+begin
+  FBoleto.GetConta.SeqNossoNumero := 123;
+  FBoleto.GetConta.Convenio := '1234567';
+  FBoleto.GetConta.Agencia := '123';
+  FBoleto.GetConta.Conta := '1234';
+  FBoleto.GetConta.Carteira := '17';
+  FBoleto.Gerar();
+
+  CheckEquals('0000001234567000000012317', FBoleto.GetCampoLivre(), 'Formatação do campo livre inválida para convênio de 7 dígitos!');
+end;
+
 
 procedure TestTFormata001.TestFormatacaoDoNumeroDaAgencia;
 begin
