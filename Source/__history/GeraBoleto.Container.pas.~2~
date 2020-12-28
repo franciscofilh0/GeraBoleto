@@ -1,0 +1,65 @@
+unit GeraBoleto.Container;
+
+interface
+
+uses
+  GeraBoleto.Boleto, System.Generics.Collections;
+
+type
+  IBoletoContainer = interface
+    ['{3466377B-928F-4221-AF23-E1FCA8D3D275}']
+    function Add: IBoleto;
+    procedure Delete(Index: Integer);
+    function Boletos: TList<IBoleto>;
+    procedure Imprimir;
+  end;
+
+  TBoletoContainer = class(TInterfacedObject, IBoletoContainer)
+  private
+    FBoletos: TList<IBoleto>;
+  public
+    constructor Create;
+    destructor Destroy; override;
+
+    function Add: IBoleto;
+    procedure Delete(Index: Integer);
+    function Boletos: TList<IBoleto>;
+    procedure Imprimir;
+  end;
+
+implementation
+
+{ TBoletoContainer }
+
+function TBoletoContainer.Add: IBoleto;
+begin
+  Result := nil;
+end;
+
+function TBoletoContainer.Boletos: TList<IBoleto>;
+begin
+  Result := nil;
+end;
+
+constructor TBoletoContainer.Create;
+begin
+  FBoletos := TList<IBoleto>.Create();
+end;
+
+procedure TBoletoContainer.Delete(Index: Integer);
+begin
+  FBoletos.Delete(Index);
+end;
+
+destructor TBoletoContainer.Destroy;
+begin
+  FBoletos.Free();
+  inherited;
+end;
+
+procedure TBoletoContainer.Imprimir;
+begin
+  //  {TODO -oOwner -cGeneral : ActionItem}
+end;
+
+end.

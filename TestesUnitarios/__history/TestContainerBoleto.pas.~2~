@@ -1,0 +1,38 @@
+unit TestContainerBoleto;
+
+interface
+
+uses
+  TestFramework, GeraBoleto.Container, GeraBoleto.Boleto;
+
+type
+  TestBoletoContainer = class(TTestCase)
+  strict private
+  private
+    FContainer: TBoletoContainer;
+  public
+    procedure SetUp; override;
+    procedure TearDown; override;
+  published
+  end;
+
+
+implementation
+
+{ TestBoletoContainer }
+
+procedure TestBoletoContainer.SetUp;
+begin
+  inherited;
+  FContainer := TBoletoContainer.Create();
+end;
+
+procedure TestBoletoContainer.TearDown;
+begin
+  inherited;
+end;
+
+initialization
+  RegisterTest(TestBoletoContainer.Suite);
+
+end.

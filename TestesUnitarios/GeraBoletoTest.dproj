@@ -103,6 +103,9 @@
         <DCCReference Include="..\Source\GeraBoleto.Factories.pas"/>
         <DCCReference Include="TestFormata001.pas"/>
         <DCCReference Include="TestGeraBoletoBuilder.pas"/>
+        <DCCReference Include="..\Source\GeraBoleto.Banco237.pas"/>
+        <DCCReference Include="..\Source\GeraBoleto.Container.pas"/>
+        <DCCReference Include="TestContainerBoleto.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
