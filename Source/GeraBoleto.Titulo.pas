@@ -2,6 +2,9 @@ unit GeraBoleto.Titulo;
 
 interface
 
+uses
+  System.Classes;
+
 type
   TTitulo = class
   private
@@ -15,7 +18,10 @@ type
     FNossoNumero: string;
     FDigitoNossoNumero: string;
     FValor: Currency;
+    FIntrucoes: TStrings;
   public
+    constructor Create;
+    destructor Destroy; override;
     property Emissao: TDate read FEmissao write FEmissao;
     property Vencimento: TDate read FVencimento write FVencimento;
     property Documento: string read FDocumento write FDocumento;
@@ -26,8 +32,22 @@ type
     property NossoNumero: string read FNossoNumero write FNossoNumero;
     property DigitoNossoNumero: string read FDigitoNossoNumero write FDigitoNossoNumero;
     property Valor: Currency read FValor write FValor;
+    property Intrucoes: TStrings read FIntrucoes write FIntrucoes;
   end;
 
 implementation
+
+{ TTitulo }
+
+constructor TTitulo.Create;
+begin
+  FIntrucoes := TStringList.Create();
+end;
+
+destructor TTitulo.Destroy;
+begin
+  FIntrucoes.Free();
+  inherited;
+end;
 
 end.

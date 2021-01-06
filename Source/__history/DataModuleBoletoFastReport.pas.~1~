@@ -1,0 +1,25 @@
+unit DataModuleBoletoFastReport;
+
+interface
+
+uses
+  System.SysUtils, System.Classes;
+
+type
+  TDataModuleBoletoFastReport = class(TDataModule)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DataModuleBoletoFastReport: TDataModuleBoletoFastReport;
+
+implementation
+
+{%CLASSGROUP 'System.Classes.TPersistent'}
+
+{$R *.dfm}
+
+end.

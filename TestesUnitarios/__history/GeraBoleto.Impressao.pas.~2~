@@ -1,0 +1,16 @@
+unit GeraBoleto.Impressao;
+
+interface
+
+uses
+  GeraBoleto.Boleto,
+  System.Generics.Collections;
+
+type
+  IImpressaoBoleto = interface
+    procedure Imprimir(Aboletos: TList<IBoletos>)
+  end;
+
+implementation
+
+end.

@@ -106,6 +106,13 @@
         <DCCReference Include="..\Source\GeraBoleto.Banco237.pas"/>
         <DCCReference Include="..\Source\GeraBoleto.Container.pas"/>
         <DCCReference Include="TestContainerBoleto.pas"/>
+        <DCCReference Include="..\Source\GeraBoleto.Impressao.pas"/>
+        <DCCReference Include="..\Source\GeraBoleto.Impressao.FastReportpas.pas"/>
+        <DCCReference Include="..\Source\DataModuleBoletoFastReport.pas">
+            <Form>dmBoletoFastReport</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

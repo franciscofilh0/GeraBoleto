@@ -30,7 +30,10 @@ uses
   TestGeraBoletoBuilder in 'TestGeraBoletoBuilder.pas',
   GeraBoleto.Banco237 in '..\Source\GeraBoleto.Banco237.pas',
   GeraBoleto.Container in '..\Source\GeraBoleto.Container.pas',
-  TestContainerBoleto in 'TestContainerBoleto.pas';
+  TestContainerBoleto in 'TestContainerBoleto.pas',
+  GeraBoleto.Impressao in '..\Source\GeraBoleto.Impressao.pas',
+  GeraBoleto.Impressao.FastReportpas in '..\Source\GeraBoleto.Impressao.FastReportpas.pas',
+  DataModuleBoletoFastReport in '..\Source\DataModuleBoletoFastReport.pas' {dmBoletoFastReport: TDataModule};
 
 {$R *.RES}
 

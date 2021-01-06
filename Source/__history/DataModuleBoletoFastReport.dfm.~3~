@@ -1,0 +1,5 @@
+object dmBoletoFastReport: TdmBoletoFastReport
+  OldCreateOrder = False
+  Height = 355
+  Width = 542
+end

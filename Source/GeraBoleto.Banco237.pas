@@ -7,6 +7,7 @@ uses
   GeraBoleto.Boleto;
 
 const
+  NOME_BANCO = 'Bradesco';
   DIGITO_NUMERO = '2';
 
 type
@@ -55,6 +56,7 @@ end;
 
 procedure TFormata237.FormataCamposConta;
 begin
+  FBoleto.GetConta.Banco.Nome := NOME_BANCO;
   FBoleto.GetConta.Agencia := LeftPad(FBoleto.GetConta.Agencia, 4);
   FBoleto.GetConta.Conta := LeftPad(FBoleto.GetConta.Conta, 7);
 end;
