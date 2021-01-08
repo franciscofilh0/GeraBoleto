@@ -3,7 +3,7 @@ unit GeraBoleto.Container;
 interface
 
 uses
-  GeraBoleto.Boleto, System.Generics.Collections;
+  GeraBoleto.Boleto, System.Generics.Collections, GeraBoleto.Impressao;
 
 type
   IBoletoContainer = interface
@@ -11,12 +11,16 @@ type
     function Add: IBoleto;
     procedure Delete(Index: Integer);
     function Boletos: TList<IBoleto>;
+    procedure SetModuloImpressao(Value: IImpressaoBoleto);
+    function GetModuloImpressao: IImpressaoBoleto;
+
     procedure Imprimir;
   end;
 
   TBoletoContainer = class(TInterfacedObject, IBoletoContainer)
   private
     FBoletos: TList<IBoleto>;
+    FModuloImpressao: IImpressaoBoleto;
   public
     constructor Create;
     destructor Destroy; override;
@@ -24,10 +28,15 @@ type
     function Add: IBoleto;
     procedure Delete(Index: Integer);
     function Boletos: TList<IBoleto>;
+    procedure SetModuloImpressao(Value: IImpressaoBoleto);
+    function GetModuloImpressao: IImpressaoBoleto;
     procedure Imprimir;
   end;
 
 implementation
+
+uses
+  System.SysUtils;
 
 { TBoletoContainer }
 
@@ -45,6 +54,7 @@ end;
 constructor TBoletoContainer.Create;
 begin
   FBoletos := TList<IBoleto>.Create();
+
 end;
 
 procedure TBoletoContainer.Delete(Index: Integer);
@@ -59,9 +69,22 @@ begin
   inherited;
 end;
 
+function TBoletoContainer.GetModuloImpressao: IImpressaoBoleto;
+begin
+  Result := FModuloImpressao;
+end;
+
+procedure TBoletoContainer.SetModuloImpressao(Value: IImpressaoBoleto);
+begin
+  FModuloImpressao := Value;
+end;
+
 procedure TBoletoContainer.Imprimir;
 begin
-  //  {TODO -oOwner -cGeneral : ActionItem}
+  if not Assigned(FModuloImpressao) then
+    raise Exception.Create('Modulo de impressão não selecionado!');
+
+  FModuloImpressao.Imprimir(FBoletos);
 end;
 
 end.

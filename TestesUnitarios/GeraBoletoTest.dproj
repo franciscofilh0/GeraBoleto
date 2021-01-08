@@ -107,7 +107,7 @@
         <DCCReference Include="..\Source\GeraBoleto.Container.pas"/>
         <DCCReference Include="TestContainerBoleto.pas"/>
         <DCCReference Include="..\Source\GeraBoleto.Impressao.pas"/>
-        <DCCReference Include="..\Source\GeraBoleto.Impressao.FastReportpas.pas"/>
+        <DCCReference Include="..\Source\GeraBoleto.Impressao.FastReport.pas"/>
         <DCCReference Include="..\Source\DataModuleBoletoFastReport.pas">
             <Form>dmBoletoFastReport</Form>
             <FormType>dfm</FormType>

@@ -1,8 +1,10 @@
 object dmBoletoFastReport: TdmBoletoFastReport
   OldCreateOrder = False
+  OnCreate = DataModuleCreate
   Height = 355
   Width = 542
   object Report: TfrxReport
+    Tag = 1
     Version = '6.2.1'
     DotMatrixReport = False
     IniFile = '\Software\Fast Reports'
@@ -10,10 +12,11 @@ object dmBoletoFastReport: TdmBoletoFastReport
     PreviewOptions.Zoom = 1.000000000000000000
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
-    ReportOptions.CreateDate = 44201.962427523150000000
-    ReportOptions.LastChange = 44201.962427523150000000
+    ReportOptions.CreateDate = 40401.475989294000000000
+    ReportOptions.LastChange = 43614.384283078700000000
     ScriptLanguage = 'PascalScript'
     StoreInDFM = False
+    OnReportPrint = 'frxReportOnReportPrint'
     Left = 264
     Top = 112
   end
@@ -168,7 +171,7 @@ object dmBoletoFastReport: TdmBoletoFastReport
       Size = 60
     end
   end
-  object frxDBDataset1: TfrxDBDataset
+  object frxDsBoletos: TfrxDBDataset
     UserName = 'frxDsBoletos'
     CloseDataSource = False
     DataSet = Boletos

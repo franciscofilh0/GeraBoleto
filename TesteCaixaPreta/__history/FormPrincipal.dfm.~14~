@@ -1,6 +1,6 @@
 object frmPrincipal: TfrmPrincipal
-  Left = 0
-  Top = 0
+  Left = 853
+  Top = 171
   ActiveControl = edtNomeBeneficiario
   Caption = 'Gera'#231#227'o de Boletos: Teste'
   ClientHeight = 697
@@ -12,6 +12,8 @@ object frmPrincipal: TfrmPrincipal
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poDesigned
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object GroupBox1: TGroupBox
@@ -83,6 +85,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 195
       Height = 21
       TabOrder = 0
+      Text = 'FF Solu'#231#245'es Tecnologicas'
     end
     object edtLogradouro: TEdit
       Left = 6
@@ -90,6 +93,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 195
       Height = 21
       TabOrder = 1
+      Text = 'Edificio Prime Office'
     end
     object edtCnpjCpf: TEdit
       Left = 230
@@ -97,6 +101,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 195
       Height = 21
       TabOrder = 2
+      Text = '05.942.151/0001-82'
     end
     object edtNumero: TEdit
       Left = 230
@@ -104,6 +109,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 67
       Height = 21
       TabOrder = 3
+      Text = '100'
     end
     object edtBairro: TEdit
       Left = 318
@@ -111,6 +117,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 139
       Height = 21
       TabOrder = 4
+      Text = 'Cidade Empresarial'
     end
     object edtCep: TEdit
       Left = 463
@@ -118,6 +125,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 122
       Height = 21
       TabOrder = 5
+      Text = '74.823-120'
     end
     object edtCidade: TEdit
       Left = 591
@@ -125,6 +133,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 106
       Height = 21
       TabOrder = 6
+      Text = 'S'#227'o Paulo'
     end
     object edtUF: TEdit
       Left = 703
@@ -132,6 +141,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 43
       Height = 21
       TabOrder = 7
+      Text = 'SP'
     end
   end
   object GroupBox2: TGroupBox
@@ -189,6 +199,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 67
       Height = 21
       TabOrder = 0
+      Text = '001'
     end
     object edtDigitoNumeroBanco: TEdit
       Left = 75
@@ -196,6 +207,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 26
       Height = 21
       TabOrder = 1
+      Text = '9'
     end
     object edtCarteira: TEdit
       Left = 406
@@ -203,6 +215,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 39
       Height = 21
       TabOrder = 2
+      Text = '17'
     end
     object edtConvenio: TEdit
       Left = 479
@@ -210,6 +223,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 82
       Height = 21
       TabOrder = 3
+      Text = '123456'
     end
     object edtSequencia: TEdit
       Left = 582
@@ -217,6 +231,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 67
       Height = 21
       TabOrder = 4
+      Text = '123'
     end
     object edtAgencia: TEdit
       Left = 134
@@ -224,6 +239,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 67
       Height = 21
       TabOrder = 5
+      Text = '1111'
     end
     object edtDigitoAgencia: TEdit
       Left = 203
@@ -231,6 +247,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 26
       Height = 21
       TabOrder = 6
+      Text = '1'
     end
     object edtConta: TEdit
       Left = 262
@@ -238,6 +255,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 67
       Height = 21
       TabOrder = 7
+      Text = '3767'
     end
     object edtDigitoConta: TEdit
       Left = 331
@@ -245,6 +263,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 26
       Height = 21
       TabOrder = 8
+      Text = '1'
     end
   end
   object GroupBox3: TGroupBox
@@ -302,6 +321,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 107
       Height = 21
       TabOrder = 0
+      Text = '15/04/2019'
     end
     object edtVencimento: TEdit
       Left = 119
@@ -309,6 +329,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 107
       Height = 21
       TabOrder = 1
+      Text = '15/06/2019'
     end
     object edtDocumento: TEdit
       Left = 239
@@ -316,6 +337,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 107
       Height = 21
       TabOrder = 2
+      Text = 'Dup030/3'
     end
     object edtAceite: TEdit
       Left = 352
@@ -323,6 +345,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 30
       Height = 21
       TabOrder = 3
+      Text = 'N'
     end
     object edtDataProcessamento: TEdit
       Left = 401
@@ -330,6 +353,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 107
       Height = 21
       TabOrder = 4
+      Text = '15/04/2019'
     end
     object edtValor: TEdit
       Left = 524
@@ -337,6 +361,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 107
       Height = 21
       TabOrder = 5
+      Text = '300'
     end
   end
   object GroupBox4: TGroupBox
@@ -403,11 +428,12 @@ object frmPrincipal: TfrmPrincipal
       Caption = 'UF'
     end
     object edtNomePagador: TEdit
-      Left = 3
+      Left = 6
       Top = 31
       Width = 195
       Height = 21
       TabOrder = 0
+      Text = 'Francisco Vieira de Almeida Filho'
     end
     object edtCnpjCpfPagador: TEdit
       Left = 214
@@ -415,13 +441,15 @@ object frmPrincipal: TfrmPrincipal
       Width = 195
       Height = 21
       TabOrder = 1
+      Text = '011.361.411-03'
     end
     object edtLogradouroPagador: TEdit
       Left = 6
-      Top = 74
+      Top = 72
       Width = 195
       Height = 21
       TabOrder = 2
+      Text = 'Rua 1027'
     end
     object edtNumeroPagador: TEdit
       Left = 214
@@ -429,6 +457,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 91
       Height = 21
       TabOrder = 3
+      Text = '204'
     end
     object edtBairroPagador: TEdit
       Left = 311
@@ -436,6 +465,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 146
       Height = 21
       TabOrder = 4
+      Text = 'Pedro Ludovico'
     end
     object edtCepPagador: TEdit
       Left = 463
@@ -443,6 +473,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 137
       Height = 21
       TabOrder = 5
+      Text = '76.590-000'
     end
     object edtCidadePagador: TEdit
       Left = 606
@@ -450,6 +481,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 131
       Height = 21
       TabOrder = 6
+      Text = 'S'#227'o Miguel do Araguaia'
     end
     object edtUFPagador: TEdit
       Left = 743
@@ -457,6 +489,7 @@ object frmPrincipal: TfrmPrincipal
       Width = 38
       Height = 21
       TabOrder = 7
+      Text = 'GO'
     end
   end
   object btnAdiciona: TButton
@@ -466,6 +499,7 @@ object frmPrincipal: TfrmPrincipal
     Height = 48
     Caption = 'Adiciona Boleto'
     TabOrder = 4
+    OnClick = btnAdicionaClick
   end
   object btnExclui: TButton
     Left = 124
@@ -482,6 +516,7 @@ object frmPrincipal: TfrmPrincipal
     Height = 48
     Caption = 'Ver no Memo'
     TabOrder = 6
+    OnClick = btnVerMemoClick
   end
   object btnImprimir: TButton
     Left = 362

@@ -249,7 +249,7 @@ EditViewName=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Container.pas
 [View10]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\TesteCaixaPreta\FormPrincipal.pas
-CursorX=57
+CursorX=6
 CursorY=111
 TopLine=97
 LeftCol=1
@@ -517,8 +517,8 @@ SplitPos=111
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=Action,
-ExpandedItems=ActiveControl=0,Anchors=0,BorderIcons=0,Constraints=0
+SelectedItem=Align,
+ExpandedItems=Anchors=0,Constraints=0,Font=0
 
 [frmDesignPreview]
 PercentageSizes=1

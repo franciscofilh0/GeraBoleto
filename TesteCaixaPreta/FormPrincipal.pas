@@ -81,6 +81,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure btnAdicionaClick(Sender: TObject);
     procedure btnVerMemoClick(Sender: TObject);
+    procedure btnImprimirClick(Sender: TObject);
   private
     { Private declarations }
     FContainer: IBoletoContainer;
@@ -94,6 +95,10 @@ var
 
 implementation
 
+uses
+  GeraBoleto.Impressao.FastReport,
+  GeraBoleto.Impressao;
+
 {$R *.dfm}
 
 procedure TfrmPrincipal.btnAdicionaClick(Sender: TObject);
@@ -103,6 +108,22 @@ begin
   Boleto := FContainer.Add();
   PreencheBoleto(Boleto);
   Boleto.Gerar();
+end;
+
+procedure TfrmPrincipal.btnImprimirClick(Sender: TObject);
+var
+  ModuloImpressao: IImpressaoBoleto;
+  Arquivo: string;
+begin
+  Arquivo := '..\..\Report\Boleto.fr3';
+
+  if FContainer.Boletos.Count > 0 then
+  begin
+    ModuloImpressao := TImpressaoBoletoFast.Create(Arquivo);
+    FContainer.SetModuloImpressao(ModuloImpressao);
+    FContainer.Imprimir();
+  end;
+
 end;
 
 procedure TfrmPrincipal.btnVerMemoClick(Sender: TObject);

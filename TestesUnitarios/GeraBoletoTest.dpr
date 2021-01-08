@@ -32,7 +32,7 @@ uses
   GeraBoleto.Container in '..\Source\GeraBoleto.Container.pas',
   TestContainerBoleto in 'TestContainerBoleto.pas',
   GeraBoleto.Impressao in '..\Source\GeraBoleto.Impressao.pas',
-  GeraBoleto.Impressao.FastReportpas in '..\Source\GeraBoleto.Impressao.FastReportpas.pas',
+  GeraBoleto.Impressao.FastReport in '..\Source\GeraBoleto.Impressao.FastReport.pas',
   DataModuleBoletoFastReport in '..\Source\DataModuleBoletoFastReport.pas' {dmBoletoFastReport: TDataModule};
 
 {$R *.RES}

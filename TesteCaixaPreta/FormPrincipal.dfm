@@ -525,6 +525,7 @@ object frmPrincipal: TfrmPrincipal
     Height = 48
     Caption = 'Imprimir'
     TabOrder = 7
+    OnClick = btnImprimirClick
   end
   object memObservacao: TMemo
     Left = 8
