@@ -1,5 +1,0 @@
-object DataModuleBoletoFastReport: TDataModuleBoletoFastReport
-  OldCreateOrder = False
-  Height = 355
-  Width = 542
-end

@@ -110,7 +110,7 @@ begin
 
   for i := 1 to Value.Length do
   begin
-    if not (Value[i] in ['0'..'9']) then
+    if not CharInSet(Value[i], ['0'..'9']) then
     begin
       Result := False;
       Break;

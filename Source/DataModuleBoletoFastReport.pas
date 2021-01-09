@@ -108,6 +108,11 @@ begin
   BoletosPagadorCidade.AsString := ABoleto.GetPagador.Endereco.Cidade;
   BoletosPagadorUF.AsString := ABoleto.GetPagador.Endereco.UF;
   BoletosPagadorTelefone.AsString := ABoleto.GetPagador.Telefone;
+
+  BoletosCodigoBarras.AsString := ABoleto.GetCodigoBarras();
+  BoletosLinhaDigitavel.AsString := ABoleto.GetLinhadigitavel();
+
+  Boletos.Post();
 end;
 
 procedure TdmBoletoFastReport.DataModuleCreate(Sender: TObject);
