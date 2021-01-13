@@ -21,6 +21,7 @@ type
     procedure FormataCamposConta;
     procedure ValidaDados;
     procedure FormataCampoLivre;
+    procedure FormataCamposParaImpressao;
   end;
 
   IGeraBoletoBuilder = interface
@@ -30,6 +31,7 @@ type
     function FormataCampoLivre: IGeraBoletoBuilder;
     function FormataCodigoBarras: IGeraBoletoBuilder;
     function FormataLindaDigitavel: IGeraBoletoBuilder;
+    function FormatacamposParaImpressao: IGeraBoletoBuilder;
     function Criar: Boolean;
   end;
 
@@ -48,6 +50,8 @@ type
     function FormataCampoLivre: IGeraBoletoBuilder;
     function FormataCodigoBarras: IGeraBoletoBuilder;
     function FormataLindaDigitavel: IGeraBoletoBuilder;
+    function FormataCamposParaImpressao: IGeraBoletoBuilder;
+
     function Criar: Boolean;
   end;
 
@@ -89,6 +93,12 @@ end;
 function TGeraBoletoBuilder.FormataCampos: IGeraBoletoBuilder;
 begin
   FFormatadorBanco.FormataCamposConta();
+  Result := Self;
+end;
+
+function TGeraBoletoBuilder.FormataCamposParaImpressao: IGeraBoletoBuilder;
+begin
+  FFormatadorBanco.FormataCamposParaImpressao();
   Result := Self;
 end;
 

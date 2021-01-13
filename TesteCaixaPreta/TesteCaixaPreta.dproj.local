@@ -2,8 +2,8 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2020/12/27 23:10:34.000.317,=C:\Users\franc\Documents\Embarcadero\Studio\Projects\Unit7.pas</Transaction>
-    <Transaction>2020/12/27 23:11:17.000.813,C:\Users\franc\Documents\Embarcadero\Studio\Projects\Unit7.dfm=D:\Estudos\Boleto\GeraBoleto\TesteCaixaPreta\FormPrincipal.dfm</Transaction>
-    <Transaction>2020/12/27 23:11:17.000.813,C:\Users\franc\Documents\Embarcadero\Studio\Projects\Unit7.pas=D:\Estudos\Boleto\GeraBoleto\TesteCaixaPreta\FormPrincipal.pas</Transaction>
-    <Transaction>2020/12/27 23:11:36.000.112,C:\Users\franc\Documents\Embarcadero\Studio\Projects\Project6.dproj=D:\Estudos\Boleto\GeraBoleto\TesteCaixaPreta\TesteCaixaPreta.dproj</Transaction>
+    <Transaction>2020/12/27 23:11:17.000.813,D:\Estudos\Boleto\GeraBoleto\TesteCaixaPreta\FormPrincipal.pas=C:\Users\franc\Documents\Embarcadero\Studio\Projects\Unit7.pas</Transaction>
+    <Transaction>2020/12/27 23:11:17.000.813,D:\Estudos\Boleto\GeraBoleto\TesteCaixaPreta\FormPrincipal.dfm=C:\Users\franc\Documents\Embarcadero\Studio\Projects\Unit7.dfm</Transaction>
+    <Transaction>2020/12/27 23:11:36.000.112,D:\Estudos\Boleto\GeraBoleto\TesteCaixaPreta\TesteCaixaPreta.dproj=C:\Users\franc\Documents\Embarcadero\Studio\Projects\Project6.dproj</Transaction>
   </Transactions>
 </BorlandProject>

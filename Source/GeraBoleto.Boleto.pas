@@ -17,10 +17,14 @@ type
     function GetCampoLivre: string;
     function GetCodigoBarras: string;
     function GetLinhadigitavel: string;
+    function GetCodBeneficiarioFormatado: string;
+    function GetNossoNumeroFormatado: string;
 
     procedure SetCampoLivre(Value: string);
     procedure SetLinhaDigitavel(Value: string);
     procedure SetCodigoBarras(Value: string);
+    procedure SetNossoNumeroFormatado(Value: string);
+    procedure SetCodBeneficiarioFormatado(Value: string);
 
     procedure Gerar;
   end;
@@ -34,6 +38,8 @@ type
     FCampoLivre: string;
     FCodigoBarras: string;
     FLinhaDigitavel: string;
+    FNossoNumeroFormatado: string;
+    FCodBeneficiarioFormatado: string;
   public
     constructor Create;
     destructor Destroy; override;
@@ -45,18 +51,16 @@ type
     function GetCampoLivre: string;
     function GetCodigoBarras: string;
     function GetLinhadigitavel: string;
+    function GetCodBeneficiarioFormatado: string;
+    function GetNossoNumeroFormatado: string;
 
     procedure SetCampoLivre(Value: string);
     procedure SetLinhaDigitavel(Value: string);
     procedure SetCodigoBarras(Value: string);
-
+    procedure SetNossoNumeroFormatado(Value: string);
+    procedure SetCodBeneficiarioFormatado(Value: string);
 
     procedure Gerar;
-
-//    property Beneficiario: TPessoa read FBeneficiario write FBeneficiario;
-//    property Conta: TConta read FConta write FConta;
-//    property Titulo: TTitulo read FTitulo write FTitulo;
-//    property Pagador: TPessoa read FPagador write FPagador;
   end;
 
 implementation
@@ -105,6 +109,11 @@ begin
   Result := FCampoLivre;
 end;
 
+function TBoleto.GetCodBeneficiarioFormatado: string;
+begin
+  Result := FCodBeneficiarioFormatado;
+end;
+
 function TBoleto.GetCodigoBarras: string;
 begin
   Result := FCodigoBarras;
@@ -118,6 +127,11 @@ end;
 function TBoleto.GetLinhadigitavel: string;
 begin
   Result := FLinhaDigitavel;
+end;
+
+function TBoleto.GetNossoNumeroFormatado: string;
+begin
+  Result := FNossoNumeroFormatado;
 end;
 
 function TBoleto.GetPagador: TPessoa;
@@ -135,6 +149,11 @@ begin
   FCampoLivre := Value;
 end;
 
+procedure TBoleto.SetCodBeneficiarioFormatado(Value: string);
+begin
+  FCodBeneficiarioFormatado := Value;
+end;
+
 procedure TBoleto.SetCodigoBarras(Value: string);
 begin
   FCodigoBarras := Value;
@@ -143,6 +162,11 @@ end;
 procedure TBoleto.SetLinhaDigitavel(Value: string);
 begin
   FLinhaDigitavel := Value;
+end;
+
+procedure TBoleto.SetNossoNumeroFormatado(Value: string);
+begin
+  FNossoNumeroFormatado := Value;
 end;
 
 end.

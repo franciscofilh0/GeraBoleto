@@ -75,7 +75,7 @@ begin
   BoletosBancoNome.AsString := ABoleto.GetConta.Banco.Nome;
 
   BoletosContaLocalPagamento.AsString := ABoleto.GetConta.LocalPagamento;
-  BoletosContaCodigoBeneficiario.AsString := ABoleto.GetConta.Conta;
+  BoletosContaCodigoBeneficiario.AsString := ABoleto.GetCodBeneficiarioFormatado;
   BoletosContaCarteira.AsString := ABoleto.GetConta.Carteira;
 
   BoletosBeneficiarioCnpjCpf.AsString := ABoleto.GetBeneficiario.CnpjCpf;
@@ -91,7 +91,7 @@ begin
   BoletosTituloData.AsDateTime := ABoleto.GetTitulo.Emissao;
   BoletosTituloVencimento.AsDateTime := ABoleto.GetTitulo.Vencimento;
   BoletosTituloDataProcessamento.AsDateTime := ABoleto.GetTitulo.DataProc;
-  BoletosTituloNossoNumero.AsString := ABoleto.GetTitulo.NossoNumero;
+  BoletosTituloNossoNumero.AsString := ABoleto.GetNossoNumeroFormatado;
   BoletosTituloDocumento.AsString := ABoleto.GetTitulo.Documento;
   BoletosTituloAceite.AsString := ABoleto.GetTitulo.Aceite;
   BoletosTituloEspecieDocumento.AsString := Aboleto.GetTitulo.EspecDoc;

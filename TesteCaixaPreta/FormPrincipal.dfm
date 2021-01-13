@@ -3,8 +3,8 @@ object frmPrincipal: TfrmPrincipal
   Top = 171
   ActiveControl = edtNomeBeneficiario
   Caption = 'Gera'#231#227'o de Boletos: Teste'
-  ClientHeight = 697
-  ClientWidth = 852
+  ClientHeight = 614
+  ClientWidth = 824
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -18,9 +18,9 @@ object frmPrincipal: TfrmPrincipal
   TextHeight = 13
   object GroupBox1: TGroupBox
     Left = 8
-    Top = 32
+    Top = 8
     Width = 809
-    Height = 122
+    Height = 105
     Caption = 'Benefici'#225'rio'
     TabOrder = 0
     object Label1: TLabel
@@ -32,7 +32,7 @@ object frmPrincipal: TfrmPrincipal
     end
     object Label2: TLabel
       Left = 6
-      Top = 64
+      Top = 59
       Width = 55
       Height = 13
       Caption = 'Logradouro'
@@ -46,35 +46,35 @@ object frmPrincipal: TfrmPrincipal
     end
     object Label4: TLabel
       Left = 230
-      Top = 64
+      Top = 59
       Width = 37
       Height = 13
       Caption = 'N'#250'mero'
     end
     object Label5: TLabel
       Left = 318
-      Top = 64
+      Top = 59
       Width = 28
       Height = 13
       Caption = 'Bairro'
     end
     object Label6: TLabel
       Left = 463
-      Top = 64
+      Top = 59
       Width = 19
       Height = 13
       Caption = 'CEP'
     end
     object Label7: TLabel
       Left = 591
-      Top = 64
+      Top = 59
       Width = 33
       Height = 13
       Caption = 'Cidade'
     end
     object Label8: TLabel
       Left = 703
-      Top = 64
+      Top = 59
       Width = 13
       Height = 13
       Caption = 'UF'
@@ -89,7 +89,7 @@ object frmPrincipal: TfrmPrincipal
     end
     object edtLogradouro: TEdit
       Left = 6
-      Top = 80
+      Top = 75
       Width = 195
       Height = 21
       TabOrder = 1
@@ -105,7 +105,7 @@ object frmPrincipal: TfrmPrincipal
     end
     object edtNumero: TEdit
       Left = 230
-      Top = 80
+      Top = 75
       Width = 67
       Height = 21
       TabOrder = 3
@@ -113,7 +113,7 @@ object frmPrincipal: TfrmPrincipal
     end
     object edtBairro: TEdit
       Left = 318
-      Top = 80
+      Top = 75
       Width = 139
       Height = 21
       TabOrder = 4
@@ -121,7 +121,7 @@ object frmPrincipal: TfrmPrincipal
     end
     object edtCep: TEdit
       Left = 463
-      Top = 80
+      Top = 75
       Width = 122
       Height = 21
       TabOrder = 5
@@ -129,7 +129,7 @@ object frmPrincipal: TfrmPrincipal
     end
     object edtCidade: TEdit
       Left = 591
-      Top = 80
+      Top = 75
       Width = 106
       Height = 21
       TabOrder = 6
@@ -137,7 +137,7 @@ object frmPrincipal: TfrmPrincipal
     end
     object edtUF: TEdit
       Left = 703
-      Top = 80
+      Top = 75
       Width = 43
       Height = 21
       TabOrder = 7
@@ -146,9 +146,9 @@ object frmPrincipal: TfrmPrincipal
   end
   object GroupBox2: TGroupBox
     Left = 8
-    Top = 177
+    Top = 119
     Width = 809
-    Height = 72
+    Height = 65
     Caption = 'Conta'
     TabOrder = 1
     object Label9: TLabel
@@ -268,7 +268,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object GroupBox3: TGroupBox
     Left = 8
-    Top = 255
+    Top = 190
     Width = 809
     Height = 66
     Caption = 'T'#237'tulo'
@@ -366,21 +366,21 @@ object frmPrincipal: TfrmPrincipal
   end
   object GroupBox4: TGroupBox
     Left = 8
-    Top = 327
+    Top = 262
     Width = 809
-    Height = 106
+    Height = 103
     Caption = 'Pagador'
     TabOrder = 3
     object Label21: TLabel
       Left = 6
-      Top = 16
+      Top = 15
       Width = 27
       Height = 13
       Caption = 'Nome'
     end
     object Label22: TLabel
       Left = 214
-      Top = 16
+      Top = 15
       Width = 48
       Height = 13
       Caption = 'CNPJ/CPF'
@@ -400,28 +400,28 @@ object frmPrincipal: TfrmPrincipal
       Caption = 'N'#250'mero'
     end
     object Label25: TLabel
-      Left = 311
+      Left = 274
       Top = 56
       Width = 28
       Height = 13
       Caption = 'Bairro'
     end
     object Label26: TLabel
-      Left = 463
+      Left = 418
       Top = 56
       Width = 19
       Height = 13
       Caption = 'CEP'
     end
     object Label27: TLabel
-      Left = 606
+      Left = 561
       Top = 56
       Width = 33
       Height = 13
       Caption = 'Cidade'
     end
     object Label28: TLabel
-      Left = 743
+      Left = 698
       Top = 56
       Width = 13
       Height = 13
@@ -437,7 +437,7 @@ object frmPrincipal: TfrmPrincipal
     end
     object edtCnpjCpfPagador: TEdit
       Left = 214
-      Top = 32
+      Top = 31
       Width = 195
       Height = 21
       TabOrder = 1
@@ -454,21 +454,21 @@ object frmPrincipal: TfrmPrincipal
     object edtNumeroPagador: TEdit
       Left = 214
       Top = 72
-      Width = 91
+      Width = 53
       Height = 21
       TabOrder = 3
       Text = '204'
     end
     object edtBairroPagador: TEdit
-      Left = 311
+      Left = 274
       Top = 72
-      Width = 146
+      Width = 135
       Height = 21
       TabOrder = 4
       Text = 'Pedro Ludovico'
     end
     object edtCepPagador: TEdit
-      Left = 463
+      Left = 418
       Top = 72
       Width = 137
       Height = 21
@@ -476,7 +476,7 @@ object frmPrincipal: TfrmPrincipal
       Text = '76.590-000'
     end
     object edtCidadePagador: TEdit
-      Left = 606
+      Left = 561
       Top = 72
       Width = 131
       Height = 21
@@ -484,7 +484,7 @@ object frmPrincipal: TfrmPrincipal
       Text = 'S'#227'o Miguel do Araguaia'
     end
     object edtUFPagador: TEdit
-      Left = 743
+      Left = 698
       Top = 72
       Width = 38
       Height = 21
@@ -493,8 +493,8 @@ object frmPrincipal: TfrmPrincipal
     end
   end
   object btnAdiciona: TButton
-    Left = 5
-    Top = 641
+    Left = 7
+    Top = 560
     Width = 113
     Height = 48
     Caption = 'Adiciona Boleto'
@@ -502,16 +502,17 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnAdicionaClick
   end
   object btnExclui: TButton
-    Left = 124
-    Top = 641
+    Left = 126
+    Top = 560
     Width = 113
     Height = 48
     Caption = 'Exclui Boleto'
     TabOrder = 5
+    OnClick = btnExcluiClick
   end
   object btnVerMemo: TButton
-    Left = 243
-    Top = 641
+    Left = 245
+    Top = 560
     Width = 113
     Height = 48
     Caption = 'Ver no Memo'
@@ -519,19 +520,50 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnVerMemoClick
   end
   object btnImprimir: TButton
-    Left = 362
-    Top = 641
+    Left = 364
+    Top = 560
     Width = 113
     Height = 48
     Caption = 'Imprimir'
     TabOrder = 7
     OnClick = btnImprimirClick
   end
-  object memObservacao: TMemo
+  object ListViewBoletos: TListView
     Left = 8
-    Top = 439
+    Top = 372
     Width = 809
-    Height = 196
+    Height = 181
+    Checkboxes = True
+    Columns = <
+      item
+        Caption = 'Item'
+      end
+      item
+        Caption = 'Banco'
+        Width = 100
+      end
+      item
+        Caption = 'Pagador'
+        Width = 230
+      end
+      item
+        Caption = 'CNPJ/CPF'
+        Width = 120
+      end
+      item
+        Caption = 'Valor'
+        Width = 70
+      end
+      item
+        Caption = 'Data vencimento'
+        Width = 100
+      end
+      item
+        Caption = 'Data emiss'#227'o'
+        Width = 100
+      end>
+    RowSelect = True
     TabOrder = 8
+    ViewStyle = vsReport
   end
 end

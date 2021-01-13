@@ -20,6 +20,7 @@ type
     procedure FormataCamposConta;
     procedure ValidaDados;
     procedure FormataCampoLivre;
+    procedure FormataCamposParaImpressao;
   end;
 
 implementation
@@ -59,6 +60,19 @@ begin
   FBoleto.GetConta.Banco.Nome := NOME_BANCO;
   FBoleto.GetConta.Agencia := LeftPad(FBoleto.GetConta.Agencia, 4);
   FBoleto.GetConta.Conta := LeftPad(FBoleto.GetConta.Conta, 7);
+end;
+
+procedure TFormata237.FormataCamposParaImpressao;
+begin
+
+
+  FBoleto.SetNossoNumeroFormatado(FBoleto.GetConta.Carteira + ' / ' +
+                                  FBoleto.GetTitulo.NossoNumero + '-' +
+                                  FBoleto.GetTitulo.DigitoNossoNumero);
+
+  FBoleto.SetCodBeneficiarioFormatado(FBoleto.GetConta.Agencia + '-' + FBoleto.GetConta.DigitoAgencia + '/' +
+                                      FBoleto.GetConta.Conta + '-' + FBoleto.GetConta.DigitoConta);
+
 end;
 
 procedure TFormata237.ValidaDados;
