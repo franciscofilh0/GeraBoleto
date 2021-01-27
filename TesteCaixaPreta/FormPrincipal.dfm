@@ -1,6 +1,6 @@
 object frmPrincipal: TfrmPrincipal
-  Left = 853
-  Top = 171
+  Left = 464
+  Top = 183
   ActiveControl = edtNomeBeneficiario
   Caption = 'Gera'#231#227'o de Boletos: Teste'
   ClientHeight = 614

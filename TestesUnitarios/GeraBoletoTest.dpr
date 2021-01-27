@@ -33,7 +33,10 @@ uses
   TestContainerBoleto in 'TestContainerBoleto.pas',
   GeraBoleto.Impressao in '..\Source\GeraBoleto.Impressao.pas',
   GeraBoleto.Impressao.FastReport in '..\Source\GeraBoleto.Impressao.FastReport.pas',
-  DataModuleBoletoFastReport in '..\Source\DataModuleBoletoFastReport.pas' {dmBoletoFastReport: TDataModule};
+  DataModuleBoletoFastReport in '..\Source\DataModuleBoletoFastReport.pas' {dmBoletoFastReport: TDataModule},
+  DataModuleDadosBoleto in '..\Source\DataModuleDadosBoleto.pas' {dmDadosBoletos: TDataModule},
+  GeraBoleto.Impressao.Fortes in '..\Source\GeraBoleto.Impressao.Fortes.pas',
+  FormBoletoFortesReport in '..\Source\FormBoletoFortesReport.pas' {frmBoletoFortesReport};
 
 {$R *.RES}
 

@@ -15,29 +15,47 @@ File_12=TSourceModule,'C:\Users\franc\Documents\Embarcadero\Studio\Projects\Unit
 File_13=TSourceModule,'C:\Users\franc\Documents\Embarcadero\Studio\Projects\AcroPDFLib_TLB.pas',0,1,1,1,1,0,0,,
 
 [Modules]
-Module0=D:\Estudos\Boleto\GeraBoleto\TesteCaixaPreta\FormPrincipal.pas
-Module1=D:\Estudos\Boleto\GeraBoleto\Source\DataModuleBoletoFastReport.pas
-Module2=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Boleto.pas
-Module3=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Base.pas
-Module4=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco237.pas
-Module5=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\GeraBoletoTest.dproj
-Module6=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco001.pas
-Module7=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Conta.pas
-Module8=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Funcoes.pas
-Module9=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Titulo.pas
-Module10=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Impressao.pas
-Module11=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestFormata001.pas
-Module12=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco.pas
-Module13=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Container.pas
-Module14=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestContainerBoleto.pas
-Module15=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Factories.pas
-Module16=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestGeraBoletoBuilder.pas
-Module17=c:\program files (x86)\embarcadero\studio\20.0\source\rtl\common\System.StrUtils.pas
-Module18=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestBanco.pas
-Module19=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Pessoa.pas
-Module20=default.htm
-Count=21
+Module0=D:\Estudos\Boleto\GeraBoleto\Source\FormBoletoFortesReport.pas
+Module1=default.htm
+Module2=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\GeraBoletoTest.dproj
+Module3=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Impressao.Fortes.pas
+Module4=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Impressao.pas
+Module5=D:\Estudos\Boleto\GeraBoleto\TesteCaixaPreta\FormPrincipal.pas
+Module6=D:\Estudos\Boleto\GeraBoleto\Source\DataModuleBoletoFastReport.pas
+Module7=D:\Estudos\Boleto\GeraBoleto\Source\DataModuleDadosBoleto.pas
+Module8=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Base.pas
+Module9=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Boleto.pas
+Module10=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco.pas
+Module11=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco237.pas
+Module12=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco001.pas
+Module13=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Conta.pas
+Module14=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Funcoes.pas
+Module15=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Titulo.pas
+Module16=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestFormata001.pas
+Module17=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Container.pas
+Module18=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestContainerBoleto.pas
+Module19=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Factories.pas
+Module20=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestGeraBoletoBuilder.pas
+Module21=c:\program files (x86)\embarcadero\studio\20.0\source\rtl\common\System.StrUtils.pas
+Module22=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestBanco.pas
+Module23=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Pessoa.pas
+Count=24
 EditWindowCount=1
+
+[D:\Estudos\Boleto\GeraBoleto\Source\FormBoletoFortesReport.pas]
+ModuleType=TSourceModule
+
+[default.htm]
+ModuleType=TURLModule
+
+[D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\GeraBoletoTest.dproj]
+ModuleType=TBaseProject
+
+[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Impressao.Fortes.pas]
+ModuleType=TSourceModule
+
+[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Impressao.pas]
+ModuleType=TSourceModule
 
 [D:\Estudos\Boleto\GeraBoleto\TesteCaixaPreta\FormPrincipal.pas]
 ModuleType=TSourceModule
@@ -45,17 +63,20 @@ ModuleType=TSourceModule
 [D:\Estudos\Boleto\GeraBoleto\Source\DataModuleBoletoFastReport.pas]
 ModuleType=TSourceModule
 
-[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Boleto.pas]
+[D:\Estudos\Boleto\GeraBoleto\Source\DataModuleDadosBoleto.pas]
 ModuleType=TSourceModule
 
 [D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Base.pas]
 ModuleType=TSourceModule
 
-[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco237.pas]
+[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Boleto.pas]
 ModuleType=TSourceModule
 
-[D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\GeraBoletoTest.dproj]
-ModuleType=TBaseProject
+[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco.pas]
+ModuleType=TSourceModule
+
+[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco237.pas]
+ModuleType=TSourceModule
 
 [D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco001.pas]
 ModuleType=TSourceModule
@@ -69,13 +90,7 @@ ModuleType=TSourceModule
 [D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Titulo.pas]
 ModuleType=TSourceModule
 
-[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Impressao.pas]
-ModuleType=TSourceModule
-
 [D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestFormata001.pas]
-ModuleType=TSourceModule
-
-[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco.pas]
 ModuleType=TSourceModule
 
 [D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Container.pas]
@@ -99,12 +114,9 @@ ModuleType=TSourceModule
 [D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Pessoa.pas]
 ModuleType=TSourceModule
 
-[default.htm]
-ModuleType=TURLModule
-
 [EditWindow0]
-ViewCount=21
-CurrentEditView=D:\Estudos\Boleto\GeraBoleto\TesteCaixaPreta\FormPrincipal.pas
+ViewCount=24
+CurrentEditView=D:\Estudos\Boleto\GeraBoleto\Source\FormBoletoFortesReport.pas
 View0=0
 View1=1
 View2=2
@@ -126,6 +138,9 @@ View17=17
 View18=18
 View19=19
 View20=20
+View21=21
+View22=22
+View23=23
 PercentageSizes=1
 Create=1
 Visible=1
@@ -144,13 +159,13 @@ BorlandEditorCodeExplorer=BorlandEditorCodeExplorer@EditWindow0
 TopPanelSize=0
 LeftPanelSize=1895
 LeftPanelClients=PropertyInspector,DockSite3
-LeftPanelData=00000800010100000000990B00000000000001670700000000000001000000005C0E000009000000446F636B536974653301000000007D1B00001100000050726F7065727479496E73706563746F72FFFFFFFF
+LeftPanelData=00000800010100000000580E00000000000001670700000000000001000000005C0E000009000000446F636B53697465330100000000002200001100000050726F7065727479496E73706563746F72FFFFFFFF
 RightPanelSize=1996
-RightPanelClients=DockSite2,DockSite4
-RightPanelData=00000800010100000000990B00000000000001CC0700000000000001000000004412000009000000446F636B536974653201000000007D1B000009000000446F636B5369746534FFFFFFFF
-BottomPanelSize=1593
-BottomPanelClients=DockSite1,MessageView
-BottomPanelData=0000080001020100000009000000446F636B5369746531045C0000000000000239060000000000000100000000045C00000F0000004D65737361676556696577466F726DFFFFFFFF
+RightPanelClients=DockSite2
+RightPanelData=00000800010100000000580E00000000000001CC0700000000000001000000000022000009000000446F636B5369746532FFFFFFFF
+BottomPanelSize=0
+BottomPanelClients=MessageView,DockSite1
+BottomPanelData=000008000102020000000F0000004D65737361676556696577466F726D09000000446F636B53697465311534000000000000022606000000000000FFFFFFFF
 BottomMiddlePanelSize=0
 BottomMiddlePanelClients=DockSite0,GraphDrawingModel
 BottomMiddelPanelData=0000080001020200000009000000446F636B536974653010000000477261706844726177696E67566965779F1D00000000000002F206000000000000FFFFFFFF
@@ -195,9 +210,9 @@ EditViewName=c:\program files (x86)\embarcadero\studio\20.0\source\rtl\common\Sy
 [View4]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Base.pas
-CursorX=48
-CursorY=99
-TopLine=19
+CursorX=43
+CursorY=112
+TopLine=95
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -261,9 +276,9 @@ EditViewName=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Container.pas
 [View10]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\TesteCaixaPreta\FormPrincipal.pas
-CursorX=1
-CursorY=121
-TopLine=117
+CursorX=26
+CursorY=171
+TopLine=161
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -271,27 +286,60 @@ EditViewName=Borland.FormDesignerView
 
 [View11]
 CustomEditViewType=TEditView
+Module=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Impressao.Fortes.pas
+CursorX=98
+CursorY=16
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Impressao.Fortes.pas
+
+[View12]
+CustomEditViewType=TEditView
+Module=D:\Estudos\Boleto\GeraBoleto\Source\FormBoletoFortesReport.pas
+CursorX=1
+CursorY=8
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=Borland.FormDesignerView
+
+[View13]
+CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Impressao.pas
-CursorX=35
-CursorY=12
+CursorX=3
+CursorY=11
 TopLine=1
 LeftCol=1
 Elisions=
 Bookmarks=
 EditViewName=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Impressao.pas
 
-[View12]
+[View14]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\Source\DataModuleBoletoFastReport.pas
-CursorX=71
-CursorY=94
-TopLine=71
+CursorX=1
+CursorY=41
+TopLine=27
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=D:\Estudos\Boleto\GeraBoleto\Source\DataModuleBoletoFastReport.pas
+EditViewName=Borland.FormDesignerView
 
-[View13]
+[View15]
+CustomEditViewType=TEditView
+Module=D:\Estudos\Boleto\GeraBoleto\Source\DataModuleDadosBoleto.pas
+CursorX=18
+CursorY=119
+TopLine=116
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Estudos\Boleto\GeraBoleto\Source\DataModuleDadosBoleto.pas
+
+[View16]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestContainerBoleto.pas
 CursorX=96
@@ -302,7 +350,7 @@ Elisions=
 Bookmarks=
 EditViewName=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestContainerBoleto.pas
 
-[View14]
+[View17]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Conta.pas
 CursorX=3
@@ -313,7 +361,7 @@ Elisions=
 Bookmarks=
 EditViewName=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Conta.pas
 
-[View15]
+[View18]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestGeraBoletoBuilder.pas
 CursorX=65
@@ -324,18 +372,18 @@ Elisions=
 Bookmarks=
 EditViewName=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestGeraBoletoBuilder.pas
 
-[View16]
+[View19]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\GeraBoletoTest.dpr
-CursorX=7
-CursorY=40
+CursorX=6
+CursorY=43
 TopLine=8
 LeftCol=1
 Elisions=
 Bookmarks=
 EditViewName=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\GeraBoletoTest.dpr
 
-[View17]
+[View20]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Pessoa.pas
 CursorX=3
@@ -346,7 +394,7 @@ Elisions=
 Bookmarks=
 EditViewName=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Pessoa.pas
 
-[View18]
+[View21]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Titulo.pas
 CursorX=21
@@ -357,18 +405,18 @@ Elisions=
 Bookmarks=
 EditViewName=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Titulo.pas
 
-[View19]
+[View22]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Boleto.pas
 CursorX=35
 CursorY=135
-TopLine=120
+TopLine=4
 LeftCol=1
 Elisions=
 Bookmarks=
 EditViewName=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Boleto.pas
 
-[View20]
+[View23]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestBanco.pas
 CursorX=21
@@ -396,19 +444,18 @@ State=0
 Left=0
 Top=0
 Width=3824
-Height=1115
+Height=1144
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3824
-ClientHeight=1115
+ClientHeight=1144
 TBDockHeight=212
 LRDockWidth=13602
 Dockable=1
 StayOnTop=0
 
 [Breakpoints]
-Count=1
-Breakpoint0='D:\Estudos\Boleto\GeraBoleto\TesteCaixaPreta\FormPrincipal.pas',119,'',0,1,'',1,0,0,'',1,'','','',0,''
+Count=0
 
 [EmbarcaderoWin32Debugger_AddressBreakpoints]
 Count=0
@@ -463,11 +510,11 @@ State=0
 Left=0
 Top=0
 Width=1996
-Height=4240
+Height=8500
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1996
-ClientHeight=4240
+ClientHeight=8500
 TBDockHeight=5904
 LRDockWidth=2348
 Dockable=1
@@ -476,18 +523,18 @@ StayOnTop=0
 [MessageView]
 PercentageSizes=1
 Create=1
-Visible=1
+Visible=0
 Docked=1
 State=0
 Left=0
-Top=28
-Width=9938
-Height=1385
+Top=0
+Width=2770
+Height=1413
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=9938
-ClientHeight=1385
-TBDockHeight=1385
+ClientWidth=2770
+ClientHeight=1413
+TBDockHeight=1413
 LRDockWidth=2770
 Dockable=1
 StayOnTop=0
@@ -500,12 +547,12 @@ Docked=1
 State=0
 Left=0
 Top=0
-Width=1996
-Height=2183
+Width=1949
+Height=7875
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=1996
-ClientHeight=2183
+ClientWidth=1949
+ClientHeight=7875
 TBDockHeight=7154
 LRDockWidth=1996
 Dockable=1
@@ -519,14 +566,14 @@ Docked=0
 State=0
 Left=0
 Top=0
-Width=1461
-Height=4279
+Width=1785
+Height=6115
 MaxLeft=-4
 MaxTop=-10
-ClientWidth=1414
-ClientHeight=3913
-TBDockHeight=4279
-LRDockWidth=1461
+ClientWidth=1738
+ClientHeight=5750
+TBDockHeight=6115
+LRDockWidth=1785
 Dockable=1
 StayOnTop=0
 
@@ -539,12 +586,12 @@ State=0
 Left=0
 Top=425
 Width=1895
-Height=3221
+Height=4952
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1895
-ClientHeight=3221
-TBDockHeight=6702
+ClientHeight=4952
+TBDockHeight=9010
 LRDockWidth=1895
 Dockable=1
 StayOnTop=0
@@ -552,8 +599,8 @@ SplitPos=111
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=Align,
-ExpandedItems=LiveBindings=0,"LiveBindings Designer=1",Margins=0,Options=0,"LiveBindings Designer.Element Layers=0",HotTrackStyles=0,IconOptions=0,StyleElements=0,Touch=0,Anchors=0,BevelEdges=0,Constraints=0,ActiveControl=0,BorderIcons=0
+SelectedItem=Name,
+ExpandedItems=Degrade=0,Font=0,InsideMargins=0,LiveBindings=0,"LiveBindings Designer=0",Margins=0,Options=0
 
 [frmDesignPreview]
 PercentageSizes=1
@@ -564,11 +611,11 @@ State=0
 Left=0
 Top=0
 Width=1996
-Height=6433
+Height=8500
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1996
-ClientHeight=6433
+ClientHeight=8500
 TBDockHeight=5962
 LRDockWidth=2512
 Dockable=1
@@ -580,8 +627,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=-2296
-Top=249
+Left=0
+Top=0
 Width=273
 Height=365
 MaxLeft=-1
@@ -605,11 +652,11 @@ State=0
 Left=0
 Top=0
 Width=3824
-Height=1115
+Height=1144
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3824
-ClientHeight=1115
+ClientHeight=1144
 TBDockHeight=413
 LRDockWidth=4949
 Dockable=1
@@ -624,11 +671,11 @@ State=0
 Left=0
 Top=0
 Width=3824
-Height=1115
+Height=1144
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3824
-ClientHeight=1115
+ClientHeight=1144
 TBDockHeight=212
 LRDockWidth=7406
 Dockable=1
@@ -647,11 +694,11 @@ State=0
 Left=0
 Top=0
 Width=3824
-Height=1115
+Height=1144
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3824
-ClientHeight=1115
+ClientHeight=1144
 TBDockHeight=1538
 LRDockWidth=3484
 Dockable=1
@@ -666,11 +713,11 @@ State=0
 Left=0
 Top=0
 Width=3824
-Height=1115
+Height=1144
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3824
-ClientHeight=1115
+ClientHeight=1144
 TBDockHeight=2067
 LRDockWidth=3484
 Dockable=1
@@ -704,11 +751,11 @@ State=0
 Left=0
 Top=0
 Width=2340
-Height=971
+Height=1212
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2340
-ClientHeight=971
+ClientHeight=1212
 TBDockHeight=2317
 LRDockWidth=2824
 Dockable=1
@@ -769,11 +816,11 @@ State=0
 Left=0
 Top=0
 Width=1996
-Height=6433
+Height=8500
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1996
-ClientHeight=6433
+ClientHeight=8500
 TBDockHeight=4885
 LRDockWidth=7148
 Dockable=1
@@ -785,8 +832,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=501
-Top=817
+Left=0
+Top=0
 Width=2855
 Height=3212
 MaxLeft=-1
@@ -804,8 +851,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=-250
-Top=-120
+Left=-8
+Top=-8
 Width=1848
 Height=3144
 MaxLeft=-1
@@ -864,11 +911,11 @@ State=0
 Left=0
 Top=0
 Width=3824
-Height=1115
+Height=1144
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3824
-ClientHeight=1115
+ClientHeight=1144
 TBDockHeight=1548
 LRDockWidth=8742
 Dockable=1
@@ -947,11 +994,11 @@ State=0
 Left=0
 Top=0
 Width=1996
-Height=6433
+Height=8500
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1996
-ClientHeight=6433
+ClientHeight=8500
 TBDockHeight=4885
 LRDockWidth=5309
 Dockable=1
@@ -1011,15 +1058,15 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=0
-Top=28
+Left=8
+Top=8
 Width=3824
-Height=1385
+Height=1413
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3824
-ClientHeight=1385
-TBDockHeight=1385
+ClientHeight=1413
+TBDockHeight=1413
 LRDockWidth=3824
 Dockable=1
 StayOnTop=0
@@ -1038,12 +1085,12 @@ State=0
 Left=0
 Top=28
 Width=1996
-Height=4510
+Height=8769
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1996
-ClientHeight=4510
-TBDockHeight=6702
+ClientHeight=8769
+TBDockHeight=9010
 LRDockWidth=1996
 Dockable=1
 StayOnTop=0
@@ -1067,7 +1114,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=1895
 ClientHeight=3471
-TBDockHeight=6702
+TBDockHeight=9010
 LRDockWidth=1895
 Dockable=1
 StayOnTop=0
@@ -1076,22 +1123,21 @@ ActiveTabID=StructureView
 TabDockClients=StructureView,ClassBrowserTool
 
 [DockSite4]
-HostDockSite=DockRightPanel
 DockSiteType=1
 PercentageSizes=1
 Create=1
 Visible=1
-Docked=1
+Docked=0
 State=0
-Left=0
-Top=533
+Left=6293
+Top=952
 Width=1996
-Height=2183
-MaxLeft=-1
-MaxTop=-1
-ClientWidth=1996
-ClientHeight=2183
-TBDockHeight=6702
+Height=8240
+MaxLeft=-4
+MaxTop=-10
+ClientWidth=1949
+ClientHeight=7875
+TBDockHeight=9010
 LRDockWidth=1996
 Dockable=1
 StayOnTop=0
@@ -1100,5 +1146,5 @@ ActiveTabID=ToolForm
 TabDockClients=ToolForm,TemplateView
 
 [ActiveProject]
-ActiveProject=2
+ActiveProject=1
 

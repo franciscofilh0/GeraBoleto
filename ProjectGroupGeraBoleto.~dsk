@@ -15,49 +15,70 @@ File_12=TSourceModule,'C:\Users\franc\Documents\Embarcadero\Studio\Projects\Unit
 File_13=TSourceModule,'C:\Users\franc\Documents\Embarcadero\Studio\Projects\AcroPDFLib_TLB.pas',0,1,1,1,1,0,0,,
 
 [Modules]
-Module0=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco237.pas
-Module1=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Base.pas
-Module2=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco001.pas
-Module3=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Boleto.pas
-Module4=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\GeraBoletoTest.dproj
-Module5=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Conta.pas
-Module6=D:\Estudos\Boleto\GeraBoleto\Source\DataModuleBoletoFastReport.pas
-Module7=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Funcoes.pas
-Module8=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Titulo.pas
-Module9=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Impressao.pas
-Module10=D:\Estudos\Boleto\GeraBoleto\TesteCaixaPreta\FormPrincipal.pas
-Module11=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestFormata001.pas
-Module12=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco.pas
-Module13=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Container.pas
-Module14=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestContainerBoleto.pas
-Module15=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Factories.pas
-Module16=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestGeraBoletoBuilder.pas
-Module17=c:\program files (x86)\embarcadero\studio\20.0\source\rtl\common\System.StrUtils.pas
-Module18=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestBanco.pas
-Module19=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Pessoa.pas
-Module20=default.htm
-Count=21
+Module0=D:\Estudos\Boleto\GeraBoleto\Source\FormBoletoFortesReport.pas
+Module1=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Impressao.Fortes.pas
+Module2=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Impressao.pas
+Module3=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\GeraBoletoTest.dproj
+Module4=D:\Estudos\Boleto\GeraBoleto\TesteCaixaPreta\FormPrincipal.pas
+Module5=D:\Estudos\Boleto\GeraBoleto\Source\DataModuleBoletoFastReport.pas
+Module6=D:\Estudos\Boleto\GeraBoleto\Source\DataModuleDadosBoleto.pas
+Module7=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Base.pas
+Module8=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Boleto.pas
+Module9=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco.pas
+Module10=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco237.pas
+Module11=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco001.pas
+Module12=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Conta.pas
+Module13=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Funcoes.pas
+Module14=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Titulo.pas
+Module15=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestFormata001.pas
+Module16=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Container.pas
+Module17=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestContainerBoleto.pas
+Module18=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Factories.pas
+Module19=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestGeraBoletoBuilder.pas
+Module20=c:\program files (x86)\embarcadero\studio\20.0\source\rtl\common\System.StrUtils.pas
+Module21=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestBanco.pas
+Module22=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Pessoa.pas
+Module23=default.htm
+Count=24
 EditWindowCount=1
 
-[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco237.pas]
+[D:\Estudos\Boleto\GeraBoleto\Source\FormBoletoFortesReport.pas]
 ModuleType=TSourceModule
 
-[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Base.pas]
+[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Impressao.Fortes.pas]
 ModuleType=TSourceModule
 
-[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco001.pas]
-ModuleType=TSourceModule
-
-[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Boleto.pas]
+[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Impressao.pas]
 ModuleType=TSourceModule
 
 [D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\GeraBoletoTest.dproj]
 ModuleType=TBaseProject
 
-[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Conta.pas]
+[D:\Estudos\Boleto\GeraBoleto\TesteCaixaPreta\FormPrincipal.pas]
 ModuleType=TSourceModule
 
 [D:\Estudos\Boleto\GeraBoleto\Source\DataModuleBoletoFastReport.pas]
+ModuleType=TSourceModule
+
+[D:\Estudos\Boleto\GeraBoleto\Source\DataModuleDadosBoleto.pas]
+ModuleType=TSourceModule
+
+[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Base.pas]
+ModuleType=TSourceModule
+
+[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Boleto.pas]
+ModuleType=TSourceModule
+
+[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco.pas]
+ModuleType=TSourceModule
+
+[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco237.pas]
+ModuleType=TSourceModule
+
+[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco001.pas]
+ModuleType=TSourceModule
+
+[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Conta.pas]
 ModuleType=TSourceModule
 
 [D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Funcoes.pas]
@@ -66,16 +87,7 @@ ModuleType=TSourceModule
 [D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Titulo.pas]
 ModuleType=TSourceModule
 
-[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Impressao.pas]
-ModuleType=TSourceModule
-
-[D:\Estudos\Boleto\GeraBoleto\TesteCaixaPreta\FormPrincipal.pas]
-ModuleType=TSourceModule
-
 [D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestFormata001.pas]
-ModuleType=TSourceModule
-
-[D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco.pas]
 ModuleType=TSourceModule
 
 [D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Container.pas]
@@ -103,8 +115,8 @@ ModuleType=TSourceModule
 ModuleType=TURLModule
 
 [EditWindow0]
-ViewCount=21
-CurrentEditView=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco237.pas
+ViewCount=24
+CurrentEditView=D:\Estudos\Boleto\GeraBoleto\Source\FormBoletoFortesReport.pas
 View0=0
 View1=1
 View2=2
@@ -126,6 +138,9 @@ View17=17
 View18=18
 View19=19
 View20=20
+View21=21
+View22=22
+View23=23
 PercentageSizes=1
 Create=1
 Visible=1
@@ -195,9 +210,9 @@ EditViewName=c:\program files (x86)\embarcadero\studio\20.0\source\rtl\common\Sy
 [View4]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Base.pas
-CursorX=48
-CursorY=99
-TopLine=84
+CursorX=43
+CursorY=112
+TopLine=95
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -206,9 +221,9 @@ EditViewName=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Base.pas
 [View5]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Banco237.pas
-CursorX=107
-CursorY=72
-TopLine=1
+CursorX=52
+CursorY=42
+TopLine=42
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -261,37 +276,70 @@ EditViewName=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Container.pas
 [View10]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\TesteCaixaPreta\FormPrincipal.pas
-CursorX=1
-CursorY=103
-TopLine=96
+CursorX=26
+CursorY=171
+TopLine=161
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=D:\Estudos\Boleto\GeraBoleto\TesteCaixaPreta\FormPrincipal.pas
+EditViewName=Borland.FormDesignerView
 
 [View11]
 CustomEditViewType=TEditView
+Module=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Impressao.Fortes.pas
+CursorX=98
+CursorY=16
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Impressao.Fortes.pas
+
+[View12]
+CustomEditViewType=TEditView
+Module=D:\Estudos\Boleto\GeraBoleto\Source\FormBoletoFortesReport.pas
+CursorX=10
+CursorY=11
+TopLine=7
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Estudos\Boleto\GeraBoleto\Source\FormBoletoFortesReport.pas
+
+[View13]
+CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Impressao.pas
-CursorX=35
-CursorY=12
+CursorX=3
+CursorY=11
 TopLine=1
 LeftCol=1
 Elisions=
 Bookmarks=
 EditViewName=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Impressao.pas
 
-[View12]
+[View14]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\Source\DataModuleBoletoFastReport.pas
-CursorX=23
-CursorY=30
-TopLine=21
+CursorX=1
+CursorY=41
+TopLine=27
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=D:\Estudos\Boleto\GeraBoleto\Source\DataModuleBoletoFastReport.pas
+EditViewName=Borland.FormDesignerView
 
-[View13]
+[View15]
+CustomEditViewType=TEditView
+Module=D:\Estudos\Boleto\GeraBoleto\Source\DataModuleDadosBoleto.pas
+CursorX=18
+CursorY=119
+TopLine=116
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Estudos\Boleto\GeraBoleto\Source\DataModuleDadosBoleto.pas
+
+[View16]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestContainerBoleto.pas
 CursorX=96
@@ -302,7 +350,7 @@ Elisions=
 Bookmarks=
 EditViewName=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestContainerBoleto.pas
 
-[View14]
+[View17]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Conta.pas
 CursorX=3
@@ -313,7 +361,7 @@ Elisions=
 Bookmarks=
 EditViewName=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Conta.pas
 
-[View15]
+[View18]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestGeraBoletoBuilder.pas
 CursorX=65
@@ -324,18 +372,18 @@ Elisions=
 Bookmarks=
 EditViewName=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestGeraBoletoBuilder.pas
 
-[View16]
+[View19]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\GeraBoletoTest.dpr
-CursorX=7
-CursorY=40
+CursorX=6
+CursorY=43
 TopLine=8
 LeftCol=1
 Elisions=
 Bookmarks=
 EditViewName=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\GeraBoletoTest.dpr
 
-[View17]
+[View20]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Pessoa.pas
 CursorX=3
@@ -346,7 +394,7 @@ Elisions=
 Bookmarks=
 EditViewName=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Pessoa.pas
 
-[View18]
+[View21]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Titulo.pas
 CursorX=21
@@ -357,18 +405,18 @@ Elisions=
 Bookmarks=
 EditViewName=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Titulo.pas
 
-[View19]
+[View22]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Boleto.pas
-CursorX=25
-CursorY=138
-TopLine=130
+CursorX=35
+CursorY=135
+TopLine=4
 LeftCol=1
 Elisions=
 Bookmarks=
 EditViewName=D:\Estudos\Boleto\GeraBoleto\Source\GeraBoleto.Boleto.pas
 
-[View20]
+[View23]
 CustomEditViewType=TEditView
 Module=D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\TestBanco.pas
 CursorX=21
@@ -439,14 +487,14 @@ Create=1
 Visible=1
 Docked=0
 State=2
-Left=4
-Top=10
-Width=5992
-Height=8288
+Left=145
+Top=269
+Width=8930
+Height=8519
 MaxLeft=-4
 MaxTop=-10
-MaxWidth=5992
-MaxHeight=8288
+MaxWidth=8930
+MaxHeight=8519
 ClientWidth=10016
 ClientHeight=9788
 BottomPanelSize=8704
@@ -1094,5 +1142,5 @@ ActiveTabID=ToolForm
 TabDockClients=ToolForm,TemplateView
 
 [ActiveProject]
-ActiveProject=2
+ActiveProject=1
 

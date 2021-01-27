@@ -2,7 +2,7 @@
     <PropertyGroup>
         <ProjectGuid>{06630E6F-79F6-45BE-8895-439933B83ED5}</ProjectGuid>
         <ProjectVersion>18.8</ProjectVersion>
-        <FrameworkType>None</FrameworkType>
+        <FrameworkType>VCL</FrameworkType>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
@@ -112,6 +112,16 @@
             <Form>dmBoletoFastReport</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="..\Source\DataModuleDadosBoleto.pas">
+            <Form>dmDadosBoletos</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="..\Source\GeraBoleto.Impressao.Fortes.pas"/>
+        <DCCReference Include="..\Source\FormBoletoFortesReport.pas">
+            <Form>frmBoletoFortesReport</Form>
+            <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

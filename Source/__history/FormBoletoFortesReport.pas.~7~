@@ -1,0 +1,37 @@
+unit FormBoletoFortesReport;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, GeraBoleto.Boleto;
+
+type
+  TfrmBoletoFortesReport = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    procedure AdicionarBoletoNoMemTable(ABoleto: IBoleto);
+  end;
+
+var
+  frmBoletoFortesReport: TfrmBoletoFortesReport;
+
+implementation
+
+{$R *.dfm}
+
+{ TfrmBoletoFortesReport }
+
+procedure TfrmBoletoFortesReport.AdicionarBoletoNoMemTable(ABoleto: IBoleto);
+begin
+
+end;
+
+procedure TfrmBoletoFortesReport.PreviewModal;
+begin
+
+end;
+
+end.

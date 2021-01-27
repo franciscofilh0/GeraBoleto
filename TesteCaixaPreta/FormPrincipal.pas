@@ -88,6 +88,7 @@ type
     FContainer: IBoletoContainer;
     procedure PreencheBoleto(ABoleto: IBoleto);
     procedure AdicionaNoListView(ABoleto: IBoleto);
+    procedure AtualizaNumeracaoItemGrade;
   public
     { Public declarations }
   end;
@@ -116,8 +117,23 @@ end;
 
 procedure TfrmPrincipal.btnExcluiClick(Sender: TObject);
 begin
-  FContainer.Delete(ListViewBoletos.Selected.Index);
-  ListViewBoletos.Selected.Delete;
+  if Assigned(ListViewBoletos.Selected) then
+  begin
+    FContainer.Delete(ListViewBoletos.Selected.Index);
+    ListViewBoletos.Selected.Delete;
+    AtualizaNumeracaoItemGrade();
+  end;
+end;
+
+procedure TfrmPrincipal.AtualizaNumeracaoItemGrade;
+var
+  i: Integer;
+begin
+
+  for i := 0 to ListViewBoletos.Items.Count - 1 do
+  begin
+    ListViewBoletos.Items[i].Caption := FormatFloat('000', i + 1);
+  end;
 end;
 
 procedure TfrmPrincipal.AdicionaNoListView(ABoleto: IBoleto);
