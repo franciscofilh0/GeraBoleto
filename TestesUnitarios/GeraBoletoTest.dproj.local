@@ -69,12 +69,12 @@
     <File Path="..\Source\GeraBoleto.Factories.pas"/>
     <File Path="..\Source\GeraBoleto.Funcoes.pas"/>
     <File Path="..\Source\GeraBoleto.Impressao.FastReport.pas"/>
+    <File Path="..\Source\GeraBoleto.Impressao.Fortes.pas"/>
     <File Path="..\Source\GeraBoleto.Impressao.pas"/>
     <File Path="..\Source\GeraBoleto.Pessoa.pas"/>
     <File Path="..\Source\GeraBoleto.Titulo.pas"/>
     <File Path="..\Source\DataModuleDadosBoleto.pas"/>
     <File Path="..\Source\DataModuleDadosBoleto.dfm"/>
-    <File Path="..\Source\GeraBoleto.Impressao.Fortes.pas"/>
     <File Path="..\Source\FormBoletoFortesReport.pas"/>
     <File Path="..\Source\FormBoletoFortesReport.dfm"/>
     <File Path="TestBanco.pas"/>

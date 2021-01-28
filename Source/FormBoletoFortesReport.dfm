@@ -11,6 +11,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object BoletoFortes: TRLReport
@@ -22,6 +23,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
     Margins.TopMargin = 5.000000000000000000
     Margins.RightMargin = 3.000000000000000000
     Margins.BottomMargin = 5.000000000000000000
+    DataSource = dsBoleto
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlack
     Font.Height = -13
@@ -33,6 +35,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
       Top = 19
       Width = 768
       Height = 564
+      BeforePrint = RLBandPrinBeforePrint
       object RLDraw79: TRLDraw
         Left = 333
         Top = 41
@@ -939,6 +942,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Alignment = taJustify
         AutoSize = False
         DataField = 'BancoNome'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -16
@@ -954,6 +958,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Height = 19
         AutoSize = False
         DataField = 'LinhaDigitavel'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -15
@@ -970,6 +975,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Alignment = taJustify
         AutoSize = False
         DataField = 'BancoNome'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -16
@@ -985,6 +991,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Height = 13
         AutoSize = False
         DataField = 'BenNome'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -9
@@ -1001,6 +1008,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Alignment = taCenter
         AutoSize = False
         DataField = 'ContaCodBeneficiario'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -9
@@ -1016,6 +1024,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Height = 13
         AutoSize = False
         DataField = 'PagNome'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -9
@@ -1032,6 +1041,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Alignment = taCenter
         AutoSize = False
         DataField = 'TitNossoNumero'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -9
@@ -1048,6 +1058,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Alignment = taCenter
         AutoSize = False
         DataField = 'TitVencimento'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -9
@@ -1064,6 +1075,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Alignment = taCenter
         AutoSize = False
         DataField = 'TitDocumento'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -9
@@ -1080,6 +1092,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Alignment = taCenter
         AutoSize = False
         DataField = 'TitEspecMoeda'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -9
@@ -1096,6 +1109,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Alignment = taCenter
         AutoSize = False
         DataField = 'TitValor'
+        DataSource = dsBoleto
         DisplayMask = ',0.00'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
@@ -1125,6 +1139,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Height = 13
         AutoSize = False
         DataField = 'ContaLocalPagto'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -9
@@ -1141,6 +1156,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Alignment = taRightJustify
         AutoSize = False
         DataField = 'TitVencimento'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -12
@@ -1157,6 +1173,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Alignment = taCenter
         AutoSize = False
         DataField = 'TitData'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -9
@@ -1173,6 +1190,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Alignment = taCenter
         AutoSize = False
         DataField = 'TitDocumento'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -9
@@ -1189,6 +1207,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Alignment = taCenter
         AutoSize = False
         DataField = 'TitEspecDoc'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -9
@@ -1205,6 +1224,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Alignment = taCenter
         AutoSize = False
         DataField = 'TitAceite'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -9
@@ -1221,6 +1241,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Alignment = taCenter
         AutoSize = False
         DataField = 'TitDataProc'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -9
@@ -1237,6 +1258,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Alignment = taRightJustify
         AutoSize = False
         DataField = 'ContaCodBeneficiario'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -12
@@ -1299,6 +1321,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Height = 14
         AutoSize = False
         DataField = 'PagNome'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -11
@@ -1316,6 +1339,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         DataFormula = 
           'PagLogradouro + '#39',  N'#250'm.: '#39' + PagNumero + '#39' - Bairro: '#39' + PagBai' +
           'rro'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -11
@@ -1331,6 +1355,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Height = 14
         AutoSize = False
         DataFormula = 'PagCep + '#39'  '#39' + PagCidade + '#39'/'#39' + PagUF'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -11
@@ -1345,6 +1370,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Width = 70
         Height = 15
         DataField = 'PagCnpjCpf'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -12
@@ -1361,6 +1387,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         AutoSize = False
         Behavior = [beSiteExpander]
         DataField = 'Observacoes'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -9
@@ -1390,6 +1417,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Height = 13
         AutoSize = False
         DataFormula = 'BenNome + '#39' - '#39' + BenCnpjCpf'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -9
@@ -1407,6 +1435,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         DataFormula = 
           'BenLogradouro + '#39'  N'#250'm.:'#39' + BenNumero + '#39' Bairro: '#39' + BenBairro ' +
           '+ '#39'  Cep: '#39' + BenCep + '#39' '#39' + BenCidade + '#39' / '#39' + BenUF'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -9
@@ -1423,6 +1452,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Alignment = taRightJustify
         AutoSize = False
         DataField = 'TitValor'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -12
@@ -1439,6 +1469,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Alignment = taRightJustify
         AutoSize = False
         DataField = 'TitNossoNumero'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -12
@@ -1455,6 +1486,7 @@ object frmBoletoFortesReport: TfrmBoletoFortesReport
         Alignment = taJustify
         AutoSize = False
         DataFormula = 'BancoNumero + '#39'-'#39' + BancoDigito'
+        DataSource = dsBoleto
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -29

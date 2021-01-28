@@ -566,4 +566,15 @@ object frmPrincipal: TfrmPrincipal
     TabOrder = 8
     ViewStyle = vsReport
   end
+  object RadioGroupImpressao: TRadioGroup
+    Left = 483
+    Top = 556
+    Width = 185
+    Height = 52
+    Caption = 'M'#243'dulo de impress'#227'o'
+    Items.Strings = (
+      'Fast Report'
+      'Fortes Report')
+    TabOrder = 9
+  end
 end

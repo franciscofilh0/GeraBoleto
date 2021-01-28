@@ -23,10 +23,10 @@ var
 begin
   frmFortesReport := TfrmBoletoFortesReport.Create(nil);
   try
-    for i := 0 to ABoletos.Count do
+    for i := 0 to ABoletos.Count - 1 do
       frmFortesReport.AdicionarBoletoNoMemTable(ABoletos[i]);
 
-    frmFortesReport.PreviewModal();
+    frmFortesReport.BoletoFortes.PreviewModal();
 
   finally
     frmFortesReport.Free();

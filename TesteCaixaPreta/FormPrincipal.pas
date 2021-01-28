@@ -6,7 +6,7 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls,
   GeraBoleto.Container,
-  GeraBoleto.Boleto, Vcl.ComCtrls;
+  GeraBoleto.Boleto, Vcl.ComCtrls, Vcl.ExtCtrls;
 
 type
   TfrmPrincipal = class(TForm)
@@ -78,6 +78,7 @@ type
     btnVerMemo: TButton;
     btnImprimir: TButton;
     ListViewBoletos: TListView;
+    RadioGroupImpressao: TRadioGroup;
     procedure FormCreate(Sender: TObject);
     procedure btnAdicionaClick(Sender: TObject);
     procedure btnVerMemoClick(Sender: TObject);
@@ -99,6 +100,7 @@ var
 implementation
 
 uses
+  GeraBoleto.Impressao.Fortes,
   GeraBoleto.Impressao.FastReport,
   GeraBoleto.Impressao;
 
@@ -159,7 +161,11 @@ begin
 
   if FContainer.Boletos.Count > 0 then
   begin
-    ModuloImpressao := TImpressaoBoletoFast.Create(Arquivo);
+    case RadioGroupImpressao.ItemIndex of
+      0: ModuloImpressao := TImpressaoBoletoFast.Create(Arquivo);
+      1: ModuloImpressao := TImpressaoBoletoFortes.Create();
+    end;
+
     FContainer.SetModuloImpressao(ModuloImpressao);
     FContainer.Imprimir();
   end;

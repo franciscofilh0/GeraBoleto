@@ -6,7 +6,7 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls,
   GeraBoleto.Container,
-  GeraBoleto.Boleto;
+  GeraBoleto.Boleto, Vcl.ComCtrls;
 
 type
   TfrmPrincipal = class(TForm)
@@ -77,15 +77,18 @@ type
     btnExclui: TButton;
     btnVerMemo: TButton;
     btnImprimir: TButton;
-    memObservacao: TMemo;
+    ListViewBoletos: TListView;
     procedure FormCreate(Sender: TObject);
     procedure btnAdicionaClick(Sender: TObject);
     procedure btnVerMemoClick(Sender: TObject);
     procedure btnImprimirClick(Sender: TObject);
+    procedure btnExcluiClick(Sender: TObject);
   private
     { Private declarations }
     FContainer: IBoletoContainer;
     procedure PreencheBoleto(ABoleto: IBoleto);
+    procedure AdicionaNoListView(ABoleto: IBoleto);
+    procedure AtualizaNumeracaoItemGrade;
   public
     { Public declarations }
   end;
@@ -108,6 +111,43 @@ begin
   Boleto := FContainer.Add();
   PreencheBoleto(Boleto);
   Boleto.Gerar();
+
+  AdicionaNoListView(Boleto);
+end;
+
+procedure TfrmPrincipal.btnExcluiClick(Sender: TObject);
+begin
+  if Assigned(ListViewBoletos.Selected) then
+  begin
+    FContainer.Delete(ListViewBoletos.Selected.Index);
+    ListViewBoletos.Selected.Delete;
+    AtualizaNumeracaoItemGrade();
+  end;
+end;
+
+procedure TfrmPrincipal.AtualizaNumeracaoItemGrade;
+var
+  i: Integer;
+begin
+
+  for i := 0 to ListViewBoletos.Items.Count - 1 do
+  begin
+    ListViewBoletos.Items[i].Caption := FormatFloat('000', i + 1);
+  end;
+end;
+
+procedure TfrmPrincipal.AdicionaNoListView(ABoleto: IBoleto);
+var
+  ListItem: TListItem;
+begin
+  ListItem := ListViewBoletos.Items.Add();
+  ListItem.Caption := FormatFloat('000', FContainer.Boletos.Count);
+  ListItem.SubItems.Add(ABoleto.GetConta.Banco.Nome);
+  ListItem.SubItems.Add(ABoleto.GetPagador.Nome);
+  ListItem.SubItems.Add(ABoleto.GetPagador.CnpjCpf);
+  ListItem.SubItems.Add(FormatFloat(',0.00', ABoleto.GetTitulo.Valor));
+  ListItem.SubItems.Add(FormatDateTime('DD/MM/YYYY', ABoleto.GetTitulo.Vencimento));
+  ListItem.SubItems.Add(FormatDateTime('DD/MM/YYYY', ABoleto.GetTitulo.Emissao));
 end;
 
 procedure TfrmPrincipal.btnImprimirClick(Sender: TObject);
@@ -115,31 +155,32 @@ var
   ModuloImpressao: IImpressaoBoleto;
   Arquivo: string;
 begin
-  Arquivo := 'Report\Boleto.fr3';
+  Arquivo := '..\..\Report\Boleto.fr3';
 
   if FContainer.Boletos.Count > 0 then
   begin
     ModuloImpressao := TImpressaoBoletoFast.Create(Arquivo);
-
+    FContainer.SetModuloImpressao(ModuloImpressao);
+    FContainer.Imprimir();
   end;
 
 end;
 
 procedure TfrmPrincipal.btnVerMemoClick(Sender: TObject);
-var
-  Boleto: IBoleto;
+//var
+//  Boleto: IBoleto;
 begin
-  if FContainer.Boletos.Count > 0 then
-  begin
-    Boleto := FContainer.Boletos[0];
-    memObservacao.Clear();
-    memObservacao.Lines.Add('Nome banco: ' + Boleto.GetConta.Banco.Nome);
-    memObservacao.Lines.Add('Nosso número: ' + Boleto.GetTitulo.NossoNumero);
-    memObservacao.Lines.Add('Dígito nosso número: ' + Boleto.GetTitulo.DigitoNossoNumero);
-    memObservacao.Lines.Add('Código de barras: ' + Boleto.GetCodigoBarras());
-    memObservacao.Lines.Add('Linha digitável: ' + Boleto.GetLinhadigitavel());
-    memObservacao.Lines.Add('Nome do pagador: ' + Boleto.GetPagador.Nome);
-  end;
+//  if FContainer.Boletos.Count > 0 then
+//  begin
+//    Boleto := FContainer.Boletos[0];
+//    memObservacao.Clear();
+//    memObservacao.Lines.Add('Nome banco: ' + Boleto.GetConta.Banco.Nome);
+//    memObservacao.Lines.Add('Nosso número: ' + Boleto.GetTitulo.NossoNumero);
+//    memObservacao.Lines.Add('Dígito nosso número: ' + Boleto.GetTitulo.DigitoNossoNumero);
+//    memObservacao.Lines.Add('Código de barras: ' + Boleto.GetCodigoBarras());
+//    memObservacao.Lines.Add('Linha digitável: ' + Boleto.GetLinhadigitavel());
+//    memObservacao.Lines.Add('Nome do pagador: ' + Boleto.GetPagador.Nome);
+//  end;
 end;
 
 procedure TfrmPrincipal.FormCreate(Sender: TObject);

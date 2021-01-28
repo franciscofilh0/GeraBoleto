@@ -131,12 +131,13 @@ type
     RLDraw113: TRLDraw;
     RLLabel181: TRLLabel;
     dsBoleto: TDataSource;
+    procedure RLBandPrinBeforePrint(Sender: TObject; var PrintIt: Boolean);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
     { Public declarations }
     procedure AdicionarBoletoNoMemTable(ABoleto: IBoleto);
-    procedure PreviewModal;
   end;
 
 var
@@ -150,12 +151,17 @@ implementation
 
 procedure TfrmBoletoFortesReport.AdicionarBoletoNoMemTable(ABoleto: IBoleto);
 begin
-
+  dmDadosBoletos.AdicionaDadosNoMemTable(ABoleto);
 end;
 
-procedure TfrmBoletoFortesReport.PreviewModal;
+procedure TfrmBoletoFortesReport.FormCreate(Sender: TObject);
 begin
+  dmDadosBoletos := TdmDadosBoletos.Create(Self);
+end;
 
+procedure TfrmBoletoFortesReport.RLBandPrinBeforePrint(Sender: TObject; var PrintIt: Boolean);
+begin
+  bcCodigoBarras.Caption := dsBoleto.DataSet.FieldByName('CodigoBarras').AsString;
 end;
 
 end.
