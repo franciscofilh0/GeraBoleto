@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<BorlandProject>
-	<Transactions>
-    <Transaction>2020/12/27 23:10:00.000.407,D:\Estudos\Boleto\GeraBoleto\ProjectGroupGeraBoleto.groupproj=C:\Users\franc\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj</Transaction>
-  </Transactions>
-	<Default.Personality>
-		<Projects ActiveProject="D:\Estudos\Boleto\GeraBoleto\TestesUnitarios\GeraBoletoTest.dproj"/>
-	</Default.Personality>
-</BorlandProject>
